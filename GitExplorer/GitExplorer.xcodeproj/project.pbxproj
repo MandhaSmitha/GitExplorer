@@ -16,6 +16,7 @@
 		5BF1554C25EA8DE6008EC837 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1554A25EA8DE6008EC837 /* LaunchScreen.storyboard */; };
 		5BF1555725EA8DE7008EC837 /* GitExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1555625EA8DE7008EC837 /* GitExplorerTests.swift */; };
 		5BF1556225EA8DE8008EC837 /* GitExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1556125EA8DE8008EC837 /* GitExplorerUITests.swift */; };
+		5BF1558125EAADBD008EC837 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1558025EAADBD008EC837 /* Localizable.strings */; };
 		CFF97591B0272665A6D9EA52 /* Pods_GitExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB91F517DBECEEECA7AD5C /* Pods_GitExplorerTests.framework */; };
 		FFFA20CFA97EA84811AF90E7 /* Pods_GitExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A3AA07BA06A80055D22B96 /* Pods_GitExplorer.framework */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		5BF1555D25EA8DE8008EC837 /* GitExplorerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitExplorerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1556125EA8DE8008EC837 /* GitExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitExplorerUITests.swift; sourceTree = "<group>"; };
 		5BF1556325EA8DE8008EC837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BF1558025EAADBD008EC837 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5D90383D8F5A31EACED47B18 /* Pods-GitExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorerTests.release.xcconfig"; path = "Target Support Files/Pods-GitExplorerTests/Pods-GitExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB88C12C110C302707E2716 /* Pods-GitExplorer-GitExplorerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorer-GitExplorerUITests.release.xcconfig"; path = "Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		786A680A89E8B400676896B1 /* Pods-GitExplorer-GitExplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorer-GitExplorerUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -116,12 +118,11 @@
 		5BF1553E25EA8DE3008EC837 /* GitExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				5BF1557F25EAAD9B008EC837 /* Localizable */,
 				5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */,
 				5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */,
-				5BF1554325EA8DE3008EC837 /* ViewController.swift */,
-				5BF1554525EA8DE3008EC837 /* Main.storyboard */,
-				5BF1554825EA8DE6008EC837 /* Assets.xcassets */,
-				5BF1554A25EA8DE6008EC837 /* LaunchScreen.storyboard */,
+				5BF1557E25EAAD65008EC837 /* Scenes */,
+				5BF1557D25EAAD2D008EC837 /* Resources */,
 				5BF1554D25EA8DE6008EC837 /* Info.plist */,
 			);
 			path = GitExplorer;
@@ -143,6 +144,32 @@
 				5BF1556325EA8DE8008EC837 /* Info.plist */,
 			);
 			path = GitExplorerUITests;
+			sourceTree = "<group>";
+		};
+		5BF1557D25EAAD2D008EC837 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1554825EA8DE6008EC837 /* Assets.xcassets */,
+				5BF1554A25EA8DE6008EC837 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5BF1557E25EAAD65008EC837 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1554325EA8DE3008EC837 /* ViewController.swift */,
+				5BF1554525EA8DE3008EC837 /* Main.storyboard */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		5BF1557F25EAAD9B008EC837 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1558025EAADBD008EC837 /* Localizable.strings */,
+			);
+			path = Localizable;
 			sourceTree = "<group>";
 		};
 		698C09BD40202EC4F93D46B8 /* Pods */ = {
@@ -276,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF1554C25EA8DE6008EC837 /* LaunchScreen.storyboard in Resources */,
+				5BF1558125EAADBD008EC837 /* Localizable.strings in Resources */,
 				5BF1554925EA8DE6008EC837 /* Assets.xcassets in Resources */,
 				5BF1554725EA8DE3008EC837 /* Main.storyboard in Resources */,
 			);
