@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,6 +56,7 @@
 		5BF1556125EA8DE8008EC837 /* GitExplorerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitExplorerUITests.swift; sourceTree = "<group>"; };
 		5BF1556325EA8DE8008EC837 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5BF1558025EAADBD008EC837 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		5BF155A025EACB46008EC837 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		5D90383D8F5A31EACED47B18 /* Pods-GitExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorerTests.release.xcconfig"; path = "Target Support Files/Pods-GitExplorerTests/Pods-GitExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB88C12C110C302707E2716 /* Pods-GitExplorer-GitExplorerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorer-GitExplorerUITests.release.xcconfig"; path = "Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		786A680A89E8B400676896B1 /* Pods-GitExplorer-GitExplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorer-GitExplorerUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +97,7 @@
 		5BF1553325EA8DE3008EC837 = {
 			isa = PBXGroup;
 			children = (
+				5BF155A025EACB46008EC837 /* .swiftlint.yml */,
 				5BF1553E25EA8DE3008EC837 /* GitExplorer */,
 				5BF1555525EA8DE7008EC837 /* GitExplorerTests */,
 				5BF1556025EA8DE8008EC837 /* GitExplorerUITests */,
@@ -118,6 +120,7 @@
 		5BF1553E25EA8DE3008EC837 /* GitExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				5BF1559425EAC52F008EC837 /* NetworkManager */,
 				5BF1557F25EAAD9B008EC837 /* Localizable */,
 				5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */,
 				5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */,
@@ -172,6 +175,13 @@
 			path = Localizable;
 			sourceTree = "<group>";
 		};
+		5BF1559425EAC52F008EC837 /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
 		698C09BD40202EC4F93D46B8 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +217,7 @@
 				5BF1553925EA8DE3008EC837 /* Frameworks */,
 				5BF1553A25EA8DE3008EC837 /* Resources */,
 				5BF1557925EAAB2E008EC837 /* ShellScript */,
+				4ED19FA212C4E0C69B340C96 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +255,7 @@
 				5BF1555925EA8DE7008EC837 /* Sources */,
 				5BF1555A25EA8DE7008EC837 /* Frameworks */,
 				5BF1555B25EA8DE7008EC837 /* Resources */,
+				289FF2884EC9CAEE79A6F0D0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -326,6 +338,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		289FF2884EC9CAEE79A6F0D0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		33415201C466C6E05BA462A8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,9 +377,26 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5BF1557925EAAB2E008EC837 /* ShellScript */ = {
+		4ED19FA212C4E0C69B340C96 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitExplorer/Pods-GitExplorer-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GitExplorer/Pods-GitExplorer-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GitExplorer/Pods-GitExplorer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BF1557925EAAB2E008EC837 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
 			files = (
 			);
 			inputFileListPaths = (

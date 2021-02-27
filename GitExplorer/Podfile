@@ -6,6 +6,7 @@ target 'GitExplorer' do
   use_frameworks!
 
   pod 'SwiftLint'
+  pod 'Alamofire'
 
   target 'GitExplorerTests' do
     inherit! :search_paths
