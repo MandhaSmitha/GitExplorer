@@ -4,6 +4,7 @@
 //
 //  Created by Mandha Smitha S on 27/02/2021.
 //
+// swiftlint:disable all
 
 import XCTest
 
