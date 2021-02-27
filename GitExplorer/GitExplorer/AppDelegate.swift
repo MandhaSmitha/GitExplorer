@@ -10,11 +10,12 @@ import UIKit
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        // Long wait times on launch screen is not recommended.
+        // The application requires the splash screen to be shown for atleast 3 seconds.
+        sleep(3)
         return true
     }
 
