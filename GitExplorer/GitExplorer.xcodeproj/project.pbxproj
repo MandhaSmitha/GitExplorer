@@ -173,8 +173,7 @@
 		5BF1557E25EAAD65008EC837 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				5BF1554325EA8DE3008EC837 /* ViewController.swift */,
-				5BF1554525EA8DE3008EC837 /* Main.storyboard */,
+				5BF155E125EC2A9F008EC837 /* Repositories */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -206,6 +205,71 @@
 				5BF155AF25EB44A4008EC837 /* NetworkRequest.swift */,
 			);
 			path = NetworkRequest;
+			sourceTree = "<group>";
+		};
+		5BF155E125EC2A9F008EC837 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155E625EC2AF2008EC837 /* Worker */,
+				5BF155E525EC2ADD008EC837 /* Storyboard */,
+				5BF155E225EC2AAA008EC837 /* SearchRepositories */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		5BF155E225EC2AAA008EC837 /* SearchRepositories */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155E725EC2AF9008EC837 /* ViewModel */,
+				5BF155E425EC2ACB008EC837 /* ViewController */,
+				5BF155E325EC2AB9008EC837 /* Views */,
+			);
+			path = SearchRepositories;
+			sourceTree = "<group>";
+		};
+		5BF155E325EC2AB9008EC837 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5BF155E425EC2ACB008EC837 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1554325EA8DE3008EC837 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5BF155E525EC2ADD008EC837 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5BF1554525EA8DE3008EC837 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5BF155E625EC2AF2008EC837 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				5BF155E825EC2B4E008EC837 /* Services */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		5BF155E725EC2AF9008EC837 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5BF155E825EC2B4E008EC837 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		698C09BD40202EC4F93D46B8 /* Pods */ = {
