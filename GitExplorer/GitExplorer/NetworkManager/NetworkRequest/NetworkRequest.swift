@@ -9,6 +9,7 @@ import Foundation
 import Alamofire
  
 typealias Params = Parameters
+typealias NetworkRequest = BaseNetworkRequest
 
 /// Defines the attributes of a network request
 protocol BaseNetworkRequest {
@@ -29,7 +30,7 @@ extension BaseNetworkRequest {
         return "https://api.github.com/"
     }
     var headers: [String: String] {
-        return ["Accept": "application/vnd.github.v3+json"]
+        return ["Accept": "application/json"]
     }
     var encoding: ParamEncoding {
         switch self.method {
