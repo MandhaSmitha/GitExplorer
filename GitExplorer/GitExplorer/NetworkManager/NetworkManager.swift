@@ -45,7 +45,7 @@ class NetworkManager: NetworkProvider {
     func request<T: Codable>(_ request: NetworkRequest,
                              mapToSuccessModel successModel: T.Type,
                              successHandler: @escaping SuccessBlock<T>,
-                             failureHandler: @escaping FailureBlock) -> DataRequest {
+                             failureHandler: @escaping FailureBlock) -> DataRequest? {
         let networkRequest: DataRequest = getDataRequest(request)
         networkRequest.validate().responseData { (response) in
             self.handleResponse(response,

@@ -14,5 +14,5 @@ protocol NetworkProvider {
     func request<T: Codable>(_ request: NetworkRequest,
                              mapToSuccessModel successModel: T.Type,
                              successHandler: @escaping SuccessBlock<T>,
-                             failureHandler: @escaping FailureBlock) -> DataRequest
+                             failureHandler: @escaping FailureBlock) -> DataRequest?
 }
