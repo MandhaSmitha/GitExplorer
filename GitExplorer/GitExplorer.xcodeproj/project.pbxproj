@@ -24,6 +24,7 @@
 		5B86AF5825EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF5525EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift */; };
 		5B86AF5925EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B86AF5625EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib */; };
 		5B86AF5A25EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF5725EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift */; };
+		5B86AF7A25EE47F000DCC5F5 /* GitRepoDetailCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF7925EE47F000DCC5F5 /* GitRepoDetailCellViewModel.swift */; };
 		5BF1554025EA8DE3008EC837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */; };
 		5BF1554225EA8DE3008EC837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */; };
 		5BF1554425EA8DE3008EC837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554325EA8DE3008EC837 /* ViewController.swift */; };
@@ -90,6 +91,7 @@
 		5B86AF5525EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GItRepoListHeaderView.swift; sourceTree = "<group>"; };
 		5B86AF5625EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GItRepoListHeaderView.xib; sourceTree = "<group>"; };
 		5B86AF5725EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRepoTableViewCell.swift; sourceTree = "<group>"; };
+		5B86AF7925EE47F000DCC5F5 /* GitRepoDetailCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoDetailCellViewModel.swift; sourceTree = "<group>"; };
 		5BF1553C25EA8DE3008EC837 /* GitExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -174,6 +176,30 @@
 				5B86AF4525EE1B8700DCC5F5 /* BaseCoordinator.swift */,
 			);
 			path = BaseCoordinator;
+			sourceTree = "<group>";
+		};
+		5B86AF7525EE432C00DCC5F5 /* RepositoryDetail */ = {
+			isa = PBXGroup;
+			children = (
+				5B86AF7825EE47AB00DCC5F5 /* ViewController */,
+				5B86AF7725EE479E00DCC5F5 /* Views */,
+			);
+			path = RepositoryDetail;
+			sourceTree = "<group>";
+		};
+		5B86AF7725EE479E00DCC5F5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5B86AF7925EE47F000DCC5F5 /* GitRepoDetailCellViewModel.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5B86AF7825EE47AB00DCC5F5 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 		5BF1553325EA8DE3008EC837 = {
@@ -283,6 +309,7 @@
 		5BF155E125EC2A9F008EC837 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				5B86AF7525EE432C00DCC5F5 /* RepositoryDetail */,
 				5BF155E625EC2AF2008EC837 /* Worker */,
 				5BF155E525EC2ADD008EC837 /* Storyboard */,
 				5BF155E225EC2AAA008EC837 /* SearchRepositories */,
@@ -715,6 +742,7 @@
 				5B86AF3E25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift in Sources */,
 				5B86AF2725EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift in Sources */,
 				5B86AF4025EE1B7B00DCC5F5 /* Storyboard+Utility.swift in Sources */,
+				5B86AF7A25EE47F000DCC5F5 /* GitRepoDetailCellViewModel.swift in Sources */,
 				5BF155BA25EB610C008EC837 /* SessionHelper.swift in Sources */,
 				5BF1566C25EC57C6008EC837 /* GitSearchReposViewModel.swift in Sources */,
 				5BF155AB25EACF83008EC837 /* HttpMethod.swift in Sources */,

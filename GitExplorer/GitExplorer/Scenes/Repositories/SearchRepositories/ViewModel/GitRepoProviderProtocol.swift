@@ -8,7 +8,7 @@
 import Foundation
 
 /// Composition of protocol to supply relevant data and protocol to handle search updates.
-typealias GitRepoProviderProtocol = GitRepoListProviderProtocol & GitRepoSearchProtocol
+typealias GitRepoProviderProtocol = GitRepoListProviderProtocol & GitRepoSearchProtocol & GitRepoDetailProviderProtocol
 
 /// Any class that provides data for a section from a specific source should conform to this protocol.
 protocol GitRepoListProviderProtocol {
@@ -23,4 +23,9 @@ protocol GitRepoListProviderProtocol {
 /// Protocol to get updates to search text.
 protocol GitRepoSearchProtocol {
     func didUpdateSearch(_ text: String)
+}
+
+/// Protocol for repo details.
+protocol GitRepoDetailProviderProtocol {
+    func getRepoDetail(for index: Int) -> GitRepoDetailCellViewModel?
 }
