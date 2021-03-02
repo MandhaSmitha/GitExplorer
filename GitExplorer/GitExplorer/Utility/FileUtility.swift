@@ -33,7 +33,10 @@ class FileUtility {
     ///   - type: filetype.
     ///   - mapToModel: Codable model to be mapped to.
     /// - Returns: Contents of the file converted to the `Codable` model of type `T`.
-    func getCodable<T: Codable>(bundle: Bundle = Bundle.main, fromFile name: String, type: String, mapToModel: T.Type) -> T? {
+    func getCodable<T: Codable>(bundle: Bundle = Bundle.main,
+                                fromFile name: String,
+                                type: String,
+                                mapToModel: T.Type) -> T? {
         guard let jsonData = getData(bundle: bundle, fromFile: name, type: type) else {
             return nil
         }
