@@ -57,8 +57,13 @@ extension ViewController: UITableViewDelegate {
         return view
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let detailModel = viewModel?.getRepoDetailCellViewModel(row: indexPath.row, section: indexPath.section)
-        coordinator?.navigateToDetail(detailModel: detailModel)
+        guard let listViewModel = viewModel else {
+            return
+        }
+        let detailModel = listViewModel.getRepoDetailCellViewModel(row: indexPath.row, section: indexPath.section)
+        let parameterModel = listViewModel.getRepoDetailParameterModel(row: indexPath.row, section: indexPath.section)
+        coordinator?.navigateToDetail(detailModel: detailModel,
+                                      parameterModel: parameterModel)
     }
 }
 

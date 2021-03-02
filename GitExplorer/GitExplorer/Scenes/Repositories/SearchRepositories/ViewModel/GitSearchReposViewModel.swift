@@ -85,12 +85,21 @@ extension GitSearchReposViewModel: GitRepoViewModelDelegate {
 }
 
 extension GitSearchReposViewModel {
-    /// Gets `GitRepoDetailCellViewModel` from appropriat Provider.
+    /// Gets `GitRepoDetailCellViewModel` from relevant Provider.
     /// - Parameters:
     ///   - row: Index of the row in section.
     ///   - section: Index of the section
     /// - Returns: Model with relevant data.
     func getRepoDetailCellViewModel(row: Int, section: Int) -> GitRepoDetailModel? {
         return repoProviders[section].getRepoDetail(for: row)
+    }
+    
+    /// Gets `GitLatestVersionParameterModel` from relevant Provider.
+    /// - Parameters:
+    ///   - row: Index of the row in section.
+    ///   - section: Index of the section
+    /// - Returns: Model with relevant data.
+    func getRepoDetailParameterModel(row: Int, section: Int) -> GitLatestVersionParameterModel {
+        return repoProviders[section].getRepoDetailParameterModel(for: row)
     }
 }

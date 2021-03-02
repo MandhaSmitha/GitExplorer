@@ -29,9 +29,10 @@ class GitSearchReposCoordinator: BaseCoordinator {
 }
 
 extension GitSearchReposCoordinator {
-    func navigateToDetail(detailModel: GitRepoDetailModel?) {
+    func navigateToDetail(detailModel: GitRepoDetailModel?, parameterModel: GitLatestVersionParameterModel) {
         let detailCoordinator = GitRepoDetailCoordinator(navigationController: navigationController,
-                                                         detailModel: detailModel)
+                                                         detailModel: detailModel,
+                                                         parameterModel: parameterModel)
         detailCoordinator.start()
     }
 }

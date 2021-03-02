@@ -20,10 +20,10 @@ class GitRepoDetailViewController: UIViewController, Storyboarded {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.loadData()
         setupSummaryView()
         setupDetailView()
     }
-    
 }
 
 /* Basic info section */
@@ -65,6 +65,7 @@ extension GitRepoDetailViewController {
         }
         detailStackView.addArrangedSubview(getSpacerView())
         setupDetailContainer()
+        detailContainer.layoutIfNeeded()
     }
     
     private func setupDetailContainer() {
@@ -77,5 +78,11 @@ extension GitRepoDetailViewController {
         let view = UIView()
         view.heightAnchor.constraint(equalToConstant: 8.0).isActive = true
         return view
+    }
+}
+
+extension GitRepoDetailViewController: GitRepoDetailViewDelegate {
+    func refreshDetailList() {
+        setupDetailView()
     }
 }

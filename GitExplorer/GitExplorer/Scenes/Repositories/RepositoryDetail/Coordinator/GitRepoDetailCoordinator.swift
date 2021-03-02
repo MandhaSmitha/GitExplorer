@@ -10,10 +10,14 @@ import UIKit
 class GitRepoDetailCoordinator: BaseCoordinator {
     var navigationController: UINavigationController?
     private var detailModel: GitRepoDetailModel?
+    private var parameterModel: GitLatestVersionParameterModel
     
-    init(navigationController: UINavigationController?, detailModel: GitRepoDetailModel?) {
+    init(navigationController: UINavigationController?,
+         detailModel: GitRepoDetailModel?,
+         parameterModel: GitLatestVersionParameterModel) {
         self.navigationController = navigationController
         self.detailModel = detailModel
+        self.parameterModel = parameterModel
     }
     
     func start() {
@@ -22,8 +26,11 @@ class GitRepoDetailCoordinator: BaseCoordinator {
         }
         let serviceProvider = GitSearchServiceHandler(networkProvider: NetworkManager())
         let worker = GitSearchWorker(serviceProvider: serviceProvider)
-        let viewModel = GitRepoDetailViewModel(worker: worker, detailModel: detailModel)
+        let viewModel = GitRepoDetailViewModel(worker: worker,
+                                               detailModel: detailModel,
+                                               parameterModel: parameterModel)
         viewController.viewModel = viewModel
+        viewModel.viewDelegate = viewController
         navigationController?.pushViewController(viewController, animated: true)
     }
 }

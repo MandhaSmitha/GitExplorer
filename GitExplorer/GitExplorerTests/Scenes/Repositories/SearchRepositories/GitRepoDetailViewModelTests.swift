@@ -16,7 +16,10 @@ class GitRepoDetailViewModelTests: XCTestCase {
         let listViewModel = GitSearchReposViewModel(worker: worker)
         listViewModel.didUpdateSearch("Str")
         let detailModel = listViewModel.getRepoDetailCellViewModel(row: 0, section: 0)
-        detailViewModel = GitRepoDetailViewModel(worker: worker, detailModel: detailModel)
+        let parameterModel = listViewModel.getRepoDetailParameterModel(row: 0, section: 0)
+        detailViewModel = GitRepoDetailViewModel(worker: worker,
+                                                 detailModel: detailModel,
+                                                 parameterModel: parameterModel)
     }
 
     override func tearDownWithError() throws {
@@ -31,12 +34,22 @@ class GitRepoDetailViewModelTests: XCTestCase {
         XCTAssertTrue(data?.iconUrl == "https://avatars.githubusercontent.com/u/19872173?v=4")
         XCTAssertTrue(data?.language == "JavaScript")
     }
-
     func testDetailList() throws {
+        /* List count is 3 before the API for latest version is called */
         let list = detailViewModel?.getDetailList()
         XCTAssertTrue(list?.count == 3)
         XCTAssertTrue(list?[0].value == "545")
         XCTAssertTrue(list?[1].value == "22")
         XCTAssertTrue(list?[2].value == "1056")
+    }
+    func testDetailListWithVersion() throws {
+        /* List count is 4 after the API for latest version is called */
+        detailViewModel?.loadData()
+        let list = detailViewModel?.getDetailList()
+        XCTAssertTrue(list?.count == 4)
+        XCTAssertTrue(list?[0].value == "545")
+        XCTAssertTrue(list?[1].value == "22")
+        XCTAssertTrue(list?[2].value == "1056")
+        XCTAssertTrue(list?[3].value == "5.0.0")
     }
 }

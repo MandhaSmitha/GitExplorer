@@ -102,7 +102,7 @@ extension GitRepoRemoteListProvider: GitRepoSearchProtocol {
                                successHandler: { [weak self] (_, response) in
                                 self?.repoSearchResponse = response
                                 self?.delegate?.dataUpdate()
-                               }, failureHandler: { [weak self] (_, _) in
+                               }, failureHandler: { [weak self] (_, resp) in
                                 if isNewRequest {
                                     self?.repoSearchResponse = nil
                                     self?.delegate?.dataUpdate()
@@ -148,5 +148,16 @@ extension GitRepoRemoteListProvider: GitRepoDetailProviderProtocol {
                                                       openIssuesCount: openIssuesCount,
                                                       stargazersCount: stargazersCount)
         return detailListModel
+    }
+    
+    /// Constructs the parameterModel needed to fetch the latestRepoVersion.
+    /// - Parameter index: Index of the item required to construct `GitLatestVersionParameterModel.`
+    /// - Returns: `GitLatestVersionParameterModel` with the required parameters.
+    func getRepoDetailParameterModel(for index: Int) -> GitLatestVersionParameterModel {
+        guard let data = repoSearchResponse?.items?[index] else {
+            return GitLatestVersionParameterModel(owner: nil, repoName: nil)
+        }
+        return GitLatestVersionParameterModel(owner: data.owner?.login,
+                                              repoName: data.name)
     }
 }

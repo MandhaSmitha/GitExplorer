@@ -7,11 +7,15 @@
 
 import Foundation
 
-/// Worker protocol for Git search. Works as an interface between the ViewModel and ServiceHandlers.
+/// Worker protocol for Git repo APIs. Works as an interface between the ViewModel and ServiceHandlers.
 /// Declare any service or data handling tasks here.
 protocol GitSearchWorkerProtocol {
     func getRepositories(parameterModel: GitReposParameterModel,
                          isNewRequest: Bool,
                          successHandler: @escaping (Int?, GitRepoListResponse?) -> Void,
                          failureHandler: @escaping (Int?, String?) -> Void)
+    func getLatestRepo(owner: String,
+                       repoName: String,
+                       successHandler: @escaping (Int?, GitLatestRepoVersionResponse?) -> Void,
+                       failureHandler: @escaping (Int?, String?) -> Void)
 }

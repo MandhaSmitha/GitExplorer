@@ -9,12 +9,22 @@ import Foundation
 
 class GitRepoDetailViewModel {
     let worker: GitSearchWorker
+    let parameterModel: GitLatestVersionParameterModel
+    var versionResponse: GitLatestRepoVersionResponse?
     private var detailModel: GitRepoDetailModel?
     private let detailKeyList = ["Forks", "OpenIssues", "StargazersCount", "LatestRelease"]
+    weak var viewDelegate: GitRepoDetailViewDelegate?
     
-    init(worker: GitSearchWorker, detailModel: GitRepoDetailModel?) {
+    init(worker: GitSearchWorker,
+         detailModel: GitRepoDetailModel?,
+         parameterModel: GitLatestVersionParameterModel) {
         self.worker = worker
         self.detailModel = detailModel
+        self.parameterModel = parameterModel
+    }
+    
+    func loadData() {
+        getLatestVersion()
     }
     
     /// Gets basic details of the repo.
@@ -36,15 +46,16 @@ class GitRepoDetailViewModel {
             switch key {
             case "Forks":
                 localizedKey = NSLocalizedString(key, comment: "Number of forks")
-                value = detailList.forksCount == nil ? nil : detailList.forksCount!
+                value = detailList.forksCount!
             case "OpenIssues":
                 localizedKey = NSLocalizedString(key, comment: "Number of open issues")
-                value = detailList.openIssuesCount == nil ? nil : detailList.openIssuesCount!
+                value = detailList.openIssuesCount!
             case "StargazersCount":
                 localizedKey = NSLocalizedString(key, comment: "Number of stargazers")
-                value = detailList.stargazersCount == nil ? nil : detailList.stargazersCount!
+                value = detailList.stargazersCount
             case "LatestRelease":
                 localizedKey = NSLocalizedString(key, comment: "Latest release")
+                value = versionResponse?.version
             default:
                 break
             }
@@ -53,5 +64,20 @@ class GitRepoDetailViewModel {
             }
         }
         return list.count > 0 ? list : nil
+    }
+}
+
+/* Latest version details */
+extension GitRepoDetailViewModel {
+    func getLatestVersion() {
+        guard let owner = parameterModel.owner, let repo = parameterModel.repoName else {
+            return
+        }
+        worker.getLatestRepo(owner: owner,
+                             repoName: repo,
+                             successHandler: { [weak self] (_, response) in
+                                self?.versionResponse = response
+                                self?.viewDelegate?.refreshDetailList()
+                             }, failureHandler: {_, _ in })
     }
 }

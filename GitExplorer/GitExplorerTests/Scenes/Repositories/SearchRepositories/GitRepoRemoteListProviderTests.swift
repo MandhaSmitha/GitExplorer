@@ -93,6 +93,11 @@ class GitRepoRemoteListProviderTests: XCTestCase {
         XCTAssertTrue(detailListModel?.openIssuesCount == "22")
         XCTAssertTrue(detailListModel?.stargazersCount == "1056")
     }
+    func testLatestVersionParameterModel() {
+        remoteListProvider.didUpdateSearch("Str")
+        let parameterModel = remoteListProvider.getRepoDetailParameterModel(for: 0)
+        XCTAssertNotNil(parameterModel)
+    }
 }
 
 /* Mock `GitRepoViewModelDelegate`. Class listening for data updates. */
