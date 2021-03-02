@@ -8,14 +8,14 @@
 import Foundation
 
 class GitRepoDetailViewModel {
-    let worker: GitSearchWorker
+    let worker: GitVersionWorkerProtocol
     let parameterModel: GitLatestVersionParameterModel
     var versionResponse: GitLatestRepoVersionResponse?
     private var detailModel: GitRepoDetailModel?
     private let detailKeyList = ["Forks", "OpenIssues", "StargazersCount", "LatestRelease"]
     weak var viewDelegate: GitRepoDetailViewDelegate?
     
-    init(worker: GitSearchWorker,
+    init(worker: GitVersionWorkerProtocol,
          detailModel: GitRepoDetailModel?,
          parameterModel: GitLatestVersionParameterModel) {
         self.worker = worker

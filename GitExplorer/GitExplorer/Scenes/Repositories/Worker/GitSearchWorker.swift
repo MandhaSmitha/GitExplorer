@@ -39,7 +39,7 @@ extension GitSearchWorker: GitSearchWorkerProtocol {
     }
 }
 
-extension GitSearchWorker {
+extension GitSearchWorker: GitVersionWorkerProtocol {
     /// Fetch latest repository version. Talks to the NetworkProvider to call the API.
     /// - Parameters:
     ///   - owner: Name of the repository owner.
