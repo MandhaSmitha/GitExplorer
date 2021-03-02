@@ -15,6 +15,7 @@ enum GitRepoSection {
 class GitSearchReposViewModel {
     var worker: GitSearchWorkerProtocol
     private var repoProviders: [GitRepoProviderProtocol] = [GitRepoProviderProtocol]()
+    weak var viewDelegate: GitRepoViewDelegate?
     
     init(worker: GitSearchWorkerProtocol) {
         self.worker = worker
@@ -79,5 +80,6 @@ extension GitSearchReposViewModel {
 extension GitSearchReposViewModel: GitRepoViewModelDelegate {
     /// Updates the view to refresh.
     func dataUpdate() {
+        viewDelegate?.refreshView()
     }
 }

@@ -67,11 +67,24 @@ class GitRepoRemoteListProviderTests: XCTestCase {
         XCTAssertNil(remoteListProvider.repoSearchResponse)
         XCTAssertFalse(didCallRefreshView)
     }
+    func testCellViewModelData() {
+        remoteListProvider.didUpdateSearch("Str")
+        let cellViewModel = remoteListProvider.cellViewModel(forRow: 0) as? GitRepoCellViewModel
+        XCTAssertTrue(cellViewModel?.title == "strapi/strapi-examples")
+        XCTAssertTrue(cellViewModel?.description == ":mortar_board: List of examples using Strapi")
+        XCTAssertTrue(cellViewModel?.defaultIconName == "DefaultFolderIcon")
+        XCTAssertTrue(cellViewModel?.iconUrl == "https://avatars.githubusercontent.com/u/19872173?v=4")
+    }
+    func testCellViewModelWithNullOwnerName() {
+        remoteListProvider.didUpdateSearch("Str")
+        let cellViewModel = remoteListProvider.cellViewModel(forRow: 1) as? GitRepoCellViewModel
+        XCTAssertTrue(cellViewModel?.title == "struts-scan")
+    }
 }
 
 /* Mock `GitRepoViewModelDelegate`. Class listening for data updates. */
 extension GitRepoRemoteListProviderTests: GitRepoViewModelDelegate {
-    func didReceiveDataUpdate() {
+    func dataUpdate() {
         didCallRefreshView = true
     }
 }

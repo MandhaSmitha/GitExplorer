@@ -20,6 +20,10 @@
 		5B86AF3F25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF3B25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift */; };
 		5B86AF4025EE1B7B00DCC5F5 /* Storyboard+Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF3C25EE1B7B00DCC5F5 /* Storyboard+Utility.swift */; };
 		5B86AF4625EE1B8700DCC5F5 /* BaseCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF4525EE1B8700DCC5F5 /* BaseCoordinator.swift */; };
+		5B86AF5125EE2C1200DCC5F5 /* GitRepoViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF5025EE2C1200DCC5F5 /* GitRepoViewDelegate.swift */; };
+		5B86AF5825EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF5525EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift */; };
+		5B86AF5925EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B86AF5625EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib */; };
+		5B86AF5A25EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF5725EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift */; };
 		5BF1554025EA8DE3008EC837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */; };
 		5BF1554225EA8DE3008EC837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */; };
 		5BF1554425EA8DE3008EC837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554325EA8DE3008EC837 /* ViewController.swift */; };
@@ -82,6 +86,10 @@
 		5B86AF3B25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Extension.swift"; sourceTree = "<group>"; };
 		5B86AF3C25EE1B7B00DCC5F5 /* Storyboard+Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Storyboard+Utility.swift"; sourceTree = "<group>"; };
 		5B86AF4525EE1B8700DCC5F5 /* BaseCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCoordinator.swift; sourceTree = "<group>"; };
+		5B86AF5025EE2C1200DCC5F5 /* GitRepoViewDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRepoViewDelegate.swift; sourceTree = "<group>"; };
+		5B86AF5525EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GItRepoListHeaderView.swift; sourceTree = "<group>"; };
+		5B86AF5625EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GItRepoListHeaderView.xib; sourceTree = "<group>"; };
+		5B86AF5725EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRepoTableViewCell.swift; sourceTree = "<group>"; };
 		5BF1553C25EA8DE3008EC837 /* GitExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -297,6 +305,9 @@
 		5BF155E325EC2AB9008EC837 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				5B86AF5525EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift */,
+				5B86AF5625EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib */,
+				5B86AF5725EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift */,
 				5B86AE7D25ED079500DCC5F5 /* GitRepoCellViewModel.swift */,
 			);
 			path = Views;
@@ -305,6 +316,7 @@
 		5BF155E425EC2ACB008EC837 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5B86AF5025EE2C1200DCC5F5 /* GitRepoViewDelegate.swift */,
 				5BF1554325EA8DE3008EC837 /* ViewController.swift */,
 			);
 			path = ViewController;
@@ -546,6 +558,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF1554C25EA8DE6008EC837 /* LaunchScreen.storyboard in Resources */,
+				5B86AF5925EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib in Resources */,
 				5BF1558125EAADBD008EC837 /* Localizable.strings in Resources */,
 				5BF1554925EA8DE6008EC837 /* Assets.xcassets in Resources */,
 				5BF1554725EA8DE3008EC837 /* Main.storyboard in Resources */,
@@ -697,6 +710,7 @@
 				5BF155FD25EC2CCE008EC837 /* GitSearchServiceHandler.swift in Sources */,
 				5BF1554425EA8DE3008EC837 /* ViewController.swift in Sources */,
 				5BF1554025EA8DE3008EC837 /* AppDelegate.swift in Sources */,
+				5B86AF5125EE2C1200DCC5F5 /* GitRepoViewDelegate.swift in Sources */,
 				5BF155BF25EC09AC008EC837 /* NetworkProvider.swift in Sources */,
 				5B86AF3E25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift in Sources */,
 				5B86AF2725EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift in Sources */,
@@ -707,6 +721,7 @@
 				5B86AF3D25EE1B7B00DCC5F5 /* UITableView+Extension.swift in Sources */,
 				5BF155B525EB5BB8008EC837 /* NetworkManager.swift in Sources */,
 				5BF155A625EACDAC008EC837 /* ParamEncoding.swift in Sources */,
+				5B86AF5825EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift in Sources */,
 				5B86AE7E25ED079500DCC5F5 /* GitRepoCellViewModel.swift in Sources */,
 				5B86AE8625ED167700DCC5F5 /* GitRepoViewModelDelegate.swift in Sources */,
 				5B86AF4625EE1B8700DCC5F5 /* BaseCoordinator.swift in Sources */,
@@ -715,6 +730,7 @@
 				5BF1560B25EC2D78008EC837 /* GitReposParameterModel.swift in Sources */,
 				5BF155B025EB44A4008EC837 /* NetworkRequest.swift in Sources */,
 				5BF1554225EA8DE3008EC837 /* SceneDelegate.swift in Sources */,
+				5B86AF5A25EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift in Sources */,
 				5B86AF3F25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift in Sources */,
 				5BF1563325EC3FC0008EC837 /* FileUtility.swift in Sources */,
 				5BF155EA25EC2CA2008EC837 /* GitSearchWorkerProtocol.swift in Sources */,

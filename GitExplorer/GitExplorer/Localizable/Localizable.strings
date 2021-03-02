@@ -8,3 +8,4 @@
 
 /* GitSearchRepo Strings*/
 "HeaderTitle" = "{count} results";
+"RepoListScreenTitle" = "Repository Library";
