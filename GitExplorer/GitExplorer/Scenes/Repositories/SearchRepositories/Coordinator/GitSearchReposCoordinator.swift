@@ -23,6 +23,15 @@ class GitSearchReposCoordinator: BaseCoordinator {
         let viewModel = GitSearchReposViewModel(worker: worker)
         viewModel.viewDelegate = viewController
         viewController.viewModel = viewModel
+        viewController.coordinator = self
         navigationController?.pushViewController(viewController, animated: false)
+    }
+}
+
+extension GitSearchReposCoordinator {
+    func navigateToDetail(detailModel: GitRepoDetailModel?) {
+        let detailCoordinator = GitRepoDetailCoordinator(navigationController: navigationController,
+                                                         detailModel: detailModel)
+        detailCoordinator.start()
     }
 }

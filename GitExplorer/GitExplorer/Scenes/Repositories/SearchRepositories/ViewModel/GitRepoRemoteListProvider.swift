@@ -115,13 +115,13 @@ extension GitRepoRemoteListProvider: GitRepoDetailProviderProtocol {
     /// Creates a repository detail model.
     /// - Parameter index: Index of the item required to be converted to `GitRepoDetailCellViewModel`.
     /// - Returns: `GitRepoDetailCellViewModel` with the details mapped from Item data.
-    func getRepoDetail(for index: Int) -> GitRepoDetailCellViewModel? {
+    func getRepoDetail(for index: Int) -> GitRepoDetailModel? {
         guard let data = repoSearchResponse?.items?[index] else {
             return nil
         }
         let summaryModel = getSummaryModel(data: data)
         let listModel = getDetailsListModel(data: data)
-        let cellViewModel = GitRepoDetailCellViewModel(summaryModel: summaryModel,
+        let cellViewModel = GitRepoDetailModel(summaryModel: summaryModel,
                                                        detailList: listModel)
         return cellViewModel
     }

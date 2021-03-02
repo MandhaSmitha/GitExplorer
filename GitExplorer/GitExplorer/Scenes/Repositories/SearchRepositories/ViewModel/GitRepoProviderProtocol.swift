@@ -27,5 +27,5 @@ protocol GitRepoSearchProtocol {
 
 /// Protocol for repo details.
 protocol GitRepoDetailProviderProtocol {
-    func getRepoDetail(for index: Int) -> GitRepoDetailCellViewModel?
+    func getRepoDetail(for index: Int) -> GitRepoDetailModel?
 }

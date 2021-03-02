@@ -1,5 +1,5 @@
 //
-//  GitRepoDetailCellViewModel.swift
+//  GitRepoDetailModel.swift
 //  GitExplorer
 //
 //  Created by Mandha Smitha S on 02/03/2021.
@@ -8,7 +8,7 @@
 import Foundation
 
 /* Model for the Repository detail screen */
-struct GitRepoDetailCellViewModel {
+struct GitRepoDetailModel {
     let summaryModel: GitRepoDetailSummaryModel
     let detailList: GitRepoDetailsListModel?
 }

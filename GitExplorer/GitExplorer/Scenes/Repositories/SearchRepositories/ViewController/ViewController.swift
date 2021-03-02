@@ -11,7 +11,8 @@ class ViewController: UIViewController, Storyboarded {
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
     var viewModel: GitSearchReposViewModel?
-    
+    var coordinator: GitSearchReposCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -56,7 +57,8 @@ extension ViewController: UITableViewDelegate {
         return view
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        let detailModel = viewModel?.getRepoDetailCellViewModel(row: indexPath.row, section: indexPath.section)
+        coordinator?.navigateToDetail(detailModel: detailModel)
     }
 }
 
