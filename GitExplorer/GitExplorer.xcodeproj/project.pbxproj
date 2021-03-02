@@ -29,6 +29,10 @@
 		5B86AF8E25EE5DAB00DCC5F5 /* GitRepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF8D25EE5DAB00DCC5F5 /* GitRepoDetailViewModel.swift */; };
 		5B86AFA525EE609000DCC5F5 /* GitRepoDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFA425EE609000DCC5F5 /* GitRepoDetailModel.swift */; };
 		5B86AFAA25EE7CE800DCC5F5 /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFA925EE7CE800DCC5F5 /* UIStackView+Extension.swift */; };
+		5B86AFAF25EE8B2100DCC5F5 /* KeyValueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFAE25EE8B2100DCC5F5 /* KeyValueDetailView.swift */; };
+		5B86AFB425EE8B3200DCC5F5 /* KeyValueDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B86AFB325EE8B3200DCC5F5 /* KeyValueDetailView.xib */; };
+		5B86AFD725EE99A600DCC5F5 /* KeyValueDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFD625EE99A600DCC5F5 /* KeyValueDetailModel.swift */; };
+		5B86AFDC25EEA9EC00DCC5F5 /* GitRepoDetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFDB25EEA9EC00DCC5F5 /* GitRepoDetailViewModelTests.swift */; };
 		5BF1554025EA8DE3008EC837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */; };
 		5BF1554225EA8DE3008EC837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */; };
 		5BF1554425EA8DE3008EC837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554325EA8DE3008EC837 /* ViewController.swift */; };
@@ -100,6 +104,10 @@
 		5B86AF8D25EE5DAB00DCC5F5 /* GitRepoDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoDetailViewModel.swift; sourceTree = "<group>"; };
 		5B86AFA425EE609000DCC5F5 /* GitRepoDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRepoDetailModel.swift; sourceTree = "<group>"; };
 		5B86AFA925EE7CE800DCC5F5 /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
+		5B86AFAE25EE8B2100DCC5F5 /* KeyValueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueDetailView.swift; sourceTree = "<group>"; };
+		5B86AFB325EE8B3200DCC5F5 /* KeyValueDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyValueDetailView.xib; sourceTree = "<group>"; };
+		5B86AFD625EE99A600DCC5F5 /* KeyValueDetailModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueDetailModel.swift; sourceTree = "<group>"; };
+		5B86AFDB25EEA9EC00DCC5F5 /* GitRepoDetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoDetailViewModelTests.swift; sourceTree = "<group>"; };
 		5BF1553C25EA8DE3008EC837 /* GitExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +197,7 @@
 		5B86AF7525EE432C00DCC5F5 /* RepositoryDetail */ = {
 			isa = PBXGroup;
 			children = (
+				5B86AFBD25EE981F00DCC5F5 /* Model */,
 				5B86AF8C25EE5D9000DCC5F5 /* ViewModel */,
 				5B86AF7E25EE592900DCC5F5 /* Coordinator */,
 				5B86AF7825EE47AB00DCC5F5 /* ViewController */,
@@ -201,6 +210,8 @@
 			isa = PBXGroup;
 			children = (
 				5B86AFA425EE609000DCC5F5 /* GitRepoDetailModel.swift */,
+				5B86AFAE25EE8B2100DCC5F5 /* KeyValueDetailView.swift */,
+				5B86AFB325EE8B3200DCC5F5 /* KeyValueDetailView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -227,6 +238,14 @@
 				5B86AF8D25EE5DAB00DCC5F5 /* GitRepoDetailViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5B86AFBD25EE981F00DCC5F5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5B86AFD625EE99A600DCC5F5 /* KeyValueDetailModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5BF1553325EA8DE3008EC837 = {
@@ -362,7 +381,6 @@
 				5B86AF5525EE2C1C00DCC5F5 /* GItRepoListHeaderView.swift */,
 				5B86AF5625EE2C1C00DCC5F5 /* GItRepoListHeaderView.xib */,
 				5B86AF5725EE2C1C00DCC5F5 /* GitRepoTableViewCell.swift */,
-				5B86AE7D25ED079500DCC5F5 /* GitRepoCellViewModel.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -431,6 +449,7 @@
 		5BF1561825EC2EEA008EC837 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				5B86AE7D25ED079500DCC5F5 /* GitRepoCellViewModel.swift */,
 				5BF1560A25EC2D78008EC837 /* GitReposParameterModel.swift */,
 				5BF1561925EC2F08008EC837 /* GitRepoListResponse.swift */,
 			);
@@ -468,6 +487,7 @@
 				5BF1563D25EC4BDB008EC837 /* GitSearchServiceHandlerTests.swift */,
 				5B86AE7325ECDB5500DCC5F5 /* GitSearchReposViewModelTests.swift */,
 				5B86AF0E25ED8BE600DCC5F5 /* GitRepoRemoteListProviderTests.swift */,
+				5B86AFDB25EEA9EC00DCC5F5 /* GitRepoDetailViewModelTests.swift */,
 			);
 			path = SearchRepositories;
 			sourceTree = "<group>";
@@ -617,6 +637,7 @@
 				5BF1558125EAADBD008EC837 /* Localizable.strings in Resources */,
 				5BF1554925EA8DE6008EC837 /* Assets.xcassets in Resources */,
 				5BF1554725EA8DE3008EC837 /* Main.storyboard in Resources */,
+				5B86AFB425EE8B3200DCC5F5 /* KeyValueDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -764,9 +785,11 @@
 			files = (
 				5BF155FD25EC2CCE008EC837 /* GitSearchServiceHandler.swift in Sources */,
 				5BF1554425EA8DE3008EC837 /* ViewController.swift in Sources */,
+				5B86AFAF25EE8B2100DCC5F5 /* KeyValueDetailView.swift in Sources */,
 				5BF1554025EA8DE3008EC837 /* AppDelegate.swift in Sources */,
 				5B86AF5125EE2C1200DCC5F5 /* GitRepoViewDelegate.swift in Sources */,
 				5BF155BF25EC09AC008EC837 /* NetworkProvider.swift in Sources */,
+				5B86AFD725EE99A600DCC5F5 /* KeyValueDetailModel.swift in Sources */,
 				5B86AFAA25EE7CE800DCC5F5 /* UIStackView+Extension.swift in Sources */,
 				5B86AF8025EE593F00DCC5F5 /* GitRepoDetailCoordinator.swift in Sources */,
 				5B86AF3E25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift in Sources */,
@@ -808,6 +831,7 @@
 				5BF1562B25EC3D18008EC837 /* MockNetworkManager.swift in Sources */,
 				5B86AE7425ECDB5500DCC5F5 /* GitSearchReposViewModelTests.swift in Sources */,
 				5BF1563E25EC4BDB008EC837 /* GitSearchServiceHandlerTests.swift in Sources */,
+				5B86AFDC25EEA9EC00DCC5F5 /* GitRepoDetailViewModelTests.swift in Sources */,
 				5B86AF0F25ED8BE600DCC5F5 /* GitRepoRemoteListProviderTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
