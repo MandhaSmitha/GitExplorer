@@ -11,13 +11,8 @@ import Alamofire
 /// Protocol for the common Network provider. Uses the Alamofire framework to make and handle API calls.
 /// Parses the response into any type that conforms to Codable.
 protocol NetworkProvider {
-    func getDataRequest(_ request: NetworkRequest) -> DataRequest
     func request<T: Codable>(_ request: NetworkRequest,
                              mapToSuccessModel successModel: T.Type,
                              successHandler: @escaping SuccessBlock<T>,
-                             failureHandler: @escaping FailureBlock)
-    func responseData<T: Codable>(_ request: DataRequest,
-                                  mapToSuccessModel successModel: T.Type,
-                                  successHandler: @escaping SuccessBlock<T>,
-                                  failureHandler: @escaping FailureBlock)
+                             failureHandler: @escaping FailureBlock) -> DataRequest?
 }

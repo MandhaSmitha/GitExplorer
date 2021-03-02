@@ -5,3 +5,7 @@
   Created by Mandha Smitha S on 27/02/2021.
   
 */
+
+/* GitSearchRepo Strings*/
+"HeaderTitle" = "{count} results";
+"RepoListScreenTitle" = "Repository Library";

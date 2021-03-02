@@ -20,11 +20,10 @@ typealias FailureBlock = (_ status: Int?, _ errorString: String?) -> Void
 
 class NetworkManager: NetworkProvider {
     /// Creates a `DataRequest` with the request attributes provided.
-    /// Use if the calling class requires a reference of the `DataRequest`.
     /// - Parameter request: `NetworkRequest` - Common type for all API requests.
     /// 					  Contains the attributes required to form a `DataRequest`.
     /// - Returns: Alamofire `DataRequest`.
-    func getDataRequest(_ request: NetworkRequest) -> DataRequest {
+    private func getDataRequest(_ request: NetworkRequest) -> DataRequest {
         let session = SessionHelper.shared.sessionManager
         let dataRequest: DataRequest = session.request(request.baseUrl + request.endpoint,
                                                        method: request.method.value,
@@ -38,14 +37,15 @@ class NetworkManager: NetworkProvider {
     /// - Parameters:
     ///   - request: `NetworkRequest` with the attributes of a specific API call.
     ///   - successModel: Codable model the response needs to be mapped to.
-    ///   - successHandler: Completion handler for in case of a success response.
+    ///   - successHandler: Completion handler in case of a success response.
     ///   Returns the HTTP status code and optionally response of type T.
     ///   - failureHandler: Completion handler in case of a failure response.
     ///   Return HTTP status code and optionally an error string.
+    /// - Returns: Alamofire `DataRequest`.  Use if the calling class needs a reference of the DataRequest.
     func request<T: Codable>(_ request: NetworkRequest,
                              mapToSuccessModel successModel: T.Type,
                              successHandler: @escaping SuccessBlock<T>,
-                             failureHandler: @escaping FailureBlock) {
+                             failureHandler: @escaping FailureBlock) -> DataRequest? {
         let networkRequest: DataRequest = getDataRequest(request)
         networkRequest.validate().responseData { (response) in
             self.handleResponse(response,
@@ -55,28 +55,7 @@ class NetworkManager: NetworkProvider {
                                     failureHandler(status, errorString)
                                 })
         }
-    }
-    
-    /// Makes an API call with the provided `DataRequest`.
-    /// - Parameters:
-    ///   - request: `DataRequest`
-    ///   - successModel: Codable model the response needs to be mapped to.
-    ///   - successHandler: Completion handler for in case of a success response.
-    ///   Returns the HTTP status code and optionally response of type T.
-    ///   - failureHandler: Completion handler in case of a failure response.
-    ///   Return HTTP status code and optionally an error string.
-    func responseData<T: Codable>(_ request: DataRequest,
-                                  mapToSuccessModel successModel: T.Type,
-                                  successHandler: @escaping SuccessBlock<T>,
-                                  failureHandler: @escaping FailureBlock) {
-        request.validate().responseData { (response) in
-            self.handleResponse(response,
-                                successHandler: { (status, responseData) in
-                                    successHandler(status, responseData)
-                                }, failureHandler: { (status, errorString) in
-                                    failureHandler(status, errorString)
-                                })
-        }
+        return networkRequest
     }
     
     /// Handles the response from the API call.

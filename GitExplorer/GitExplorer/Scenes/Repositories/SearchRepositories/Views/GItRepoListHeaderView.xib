@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="GItRepoListHeaderView" customModule="GitExplorer" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="222"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IcD-cz-fAN">
+                    <rect key="frame" x="20" y="8" width="415" height="206"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.61568627450980395" blue="0.6588235294117647" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="IcD-cz-fAN" secondAttribute="trailing" constant="20" id="Di0-p0-fAy"/>
+                <constraint firstItem="IcD-cz-fAN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="QBx-1I-5pQ"/>
+                <constraint firstAttribute="bottom" secondItem="IcD-cz-fAN" secondAttribute="bottom" constant="8" id="Ycv-Sl-Chc"/>
+                <constraint firstItem="IcD-cz-fAN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="gmE-W9-xwP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLabel" destination="IcD-cz-fAN" id="EK2-SE-eNV"/>
+            </connections>
+            <point key="canvasLocation" x="-12.318840579710146" y="-210.9375"/>
+        </view>
+    </objects>
+</document>
