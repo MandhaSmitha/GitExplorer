@@ -96,8 +96,9 @@ extension GitRepoRemoteListProvider: GitRepoSearchProtocol {
         }
     }
     
-    /// If an api call is not already in progress and the end of page is reached, call the api with incremented page number.
-    /// Check if all items in the list are already available. Total count is available in the response attribute `totalCount`.
+    /// If an api call is not already in progress and the end of page is reached, call the api with incremented page no.
+    /// Check if all items in the list are already available.
+    /// Total count is available in the response attribute `totalCount`.
     /// Do not call the api if all the items are already fetched.
     func didReachEndOfPage() {
         guard let items = repoSearchResponse?.items,
@@ -110,7 +111,7 @@ extension GitRepoRemoteListProvider: GitRepoSearchProtocol {
         }
     }
     
-    /// Fetch repo list by calling the API. Reset response in case of change of search text and append if it is paginatin.
+    /// Fetch repo list by calling the API. Reset response in case of change of searchText and append if it's paginatin.
     /// - Parameter isNewRequest: `true` in case of change in search text. `false` in case of pagination.
     private func fetchUpdatedData(isNewRequest: Bool = true) {
         isLoading = true
