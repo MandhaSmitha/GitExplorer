@@ -98,6 +98,21 @@ class GitRepoRemoteListProviderTests: XCTestCase {
         let parameterModel = remoteListProvider.getRepoDetailParameterModel(for: 0)
         XCTAssertNotNil(parameterModel)
     }
+    func testSearchResultsOnTextChange() {
+        remoteListProvider.didUpdateSearch("Str")
+        XCTAssertTrue(remoteListProvider.parameterModel.page == 1)
+        XCTAssertTrue(remoteListProvider.repoSearchResponse?.items?.count == 5)
+        remoteListProvider.didUpdateSearch("Stri")
+        XCTAssertTrue(remoteListProvider.parameterModel.page == 1)
+        XCTAssertTrue(remoteListProvider.repoSearchResponse?.items?.count == 5)
+    }
+    func testPagination() {
+        remoteListProvider.didUpdateSearch("Str")
+        XCTAssertTrue(remoteListProvider.repoSearchResponse?.items?.count == 5)
+        remoteListProvider.didReachEndOfPage()
+        XCTAssertTrue(remoteListProvider.parameterModel.page == 2)
+        XCTAssertTrue(remoteListProvider.repoSearchResponse?.items?.count == 10)
+    }
 }
 
 /* Mock `GitRepoViewModelDelegate`. Class listening for data updates. */

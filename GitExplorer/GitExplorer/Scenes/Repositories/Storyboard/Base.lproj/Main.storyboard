@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="CMx-9D-2Lf">
-                                <rect key="frame" x="0.0" y="98" width="414" height="56"/>
+                                <rect key="frame" x="12" y="93" width="390" height="56"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -27,9 +27,14 @@
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" pagingEnabled="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cGm-QS-oLh">
-                                <rect key="frame" x="0.0" y="184" width="414" height="678"/>
+                                <rect key="frame" x="0.0" y="174" width="414" height="688"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="dd2-xe-sJ9">
+                                    <rect key="frame" x="0.0" y="139" width="414" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="GitRepoTableViewCell" id="Vam-B1-nLK" customClass="GitRepoTableViewCell" customModule="GitExplorer" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="55.5" width="414" height="66"/>
@@ -40,7 +45,7 @@
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yyY-dK-GZ5">
                                                     <rect key="frame" x="78" y="12" width="283" height="0.0"/>
-                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="16"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" red="0.20000000000000001" green="0.23529411764705882" blue="0.32156862745098036" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -94,15 +99,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="cGm-QS-oLh" firstAttribute="top" secondItem="CMx-9D-2Lf" secondAttribute="bottom" constant="30" id="FTy-Ug-1Ck"/>
+                            <constraint firstItem="cGm-QS-oLh" firstAttribute="top" secondItem="CMx-9D-2Lf" secondAttribute="bottom" constant="25" id="FTy-Ug-1Ck"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="cGm-QS-oLh" secondAttribute="bottom" id="PK2-Uo-gPd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CMx-9D-2Lf" secondAttribute="trailing" constant="12" id="UsF-Kh-h2Y"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cGm-QS-oLh" secondAttribute="trailing" id="WNs-sZ-Vs3"/>
-                            <constraint firstItem="CMx-9D-2Lf" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WUV-QG-UUU"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nia-hm-cIL" secondAttribute="trailing" constant="20" id="hlQ-rt-jHW"/>
                             <constraint firstItem="cGm-QS-oLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jeQ-3M-bjJ"/>
                             <constraint firstItem="Nia-hm-cIL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mSb-zg-cqi"/>
-                            <constraint firstItem="CMx-9D-2Lf" firstAttribute="top" secondItem="Nia-hm-cIL" secondAttribute="bottom" constant="20" id="o7j-UB-qoe"/>
-                            <constraint firstItem="CMx-9D-2Lf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="of7-8G-twN"/>
+                            <constraint firstItem="CMx-9D-2Lf" firstAttribute="top" secondItem="Nia-hm-cIL" secondAttribute="bottom" constant="15" id="o7j-UB-qoe"/>
+                            <constraint firstItem="CMx-9D-2Lf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="12" id="of7-8G-twN"/>
                             <constraint firstItem="Nia-hm-cIL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="xtD-p2-3bl"/>
                         </constraints>
                     </view>
@@ -174,7 +179,7 @@
                                         </subviews>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hgp-C4-En8">
-                                        <rect key="frame" x="0.0" y="157" width="374" height="50"/>
+                                        <rect key="frame" x="0.0" y="157.5" width="374" height="50"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kUw-e6-eaf">
                                                 <rect key="frame" x="20" y="0.0" width="334" height="50"/>

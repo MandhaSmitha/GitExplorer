@@ -20,9 +20,10 @@ protocol GitRepoListProviderProtocol {
     func cellViewModel(forRow index: Int) -> Any?
 }
 
-/// Protocol to get updates to search text.
-protocol GitRepoSearchProtocol {
+/// Protocol to get updates based on search text or get more results when end of one page is reached.
+@objc protocol GitRepoSearchProtocol {
     func didUpdateSearch(_ text: String)
+    @objc optional func didReachEndOfPage()
 }
 
 /// Protocol for repo details.
