@@ -30,7 +30,12 @@ class GitRepoDetailCoordinator: BaseCoordinator {
                                                detailModel: detailModel,
                                                parameterModel: parameterModel)
         viewController.viewModel = viewModel
+        viewController.coordinator = self
         viewModel.viewDelegate = viewController
         navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    func navigateToRepoList() {
+        navigationController?.popViewController(animated: true)
     }
 }

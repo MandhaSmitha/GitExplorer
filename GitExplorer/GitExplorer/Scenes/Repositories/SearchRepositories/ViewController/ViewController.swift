@@ -8,6 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController, Storyboarded {
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
     var viewModel: GitSearchReposViewModel?
@@ -18,7 +19,7 @@ class ViewController: UIViewController, Storyboarded {
         setupView()
     }
     func setupView() {
-        self.title = NSLocalizedString("RepoListScreenTitle", comment: "Repository list screen title")
+        titleLabel.text = NSLocalizedString("RepoListScreenTitle", comment: "Repository list screen title")
         tableView.register(headerFooterViewType: GItRepoListHeaderView.self)
         searchBar.setShowsCancelButton(false, animated: false)
     }

@@ -17,12 +17,18 @@ class GitRepoDetailViewController: UIViewController, Storyboarded {
     @IBOutlet var detailContainer: UIView!
     @IBOutlet var detailStackView: UIStackView!
     var viewModel: GitRepoDetailViewModel?
-    
+    var coordinator: GitRepoDetailCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.hidesBackButton = true
         viewModel?.loadData()
         setupSummaryView()
         setupDetailView()
+    }
+    
+    @IBAction func didTapBackButton(_ sender: UIButton) {
+        coordinator?.navigateToRepoList()
     }
 }
 
