@@ -6,6 +6,12 @@
   
 */
 
-/* GitSearchRepo Strings*/
+/* GitSearchRepo Strings */
 "HeaderTitle" = "{count} results";
 "RepoListScreenTitle" = "Repository Library";
+
+/* GitSearchRepo detail Strings */
+"Forks" = "Forks";
+"OpenIssues" = "Issues";
+"StargazersCount" = "Starred by";
+"LatestRelease" = "Last release version";

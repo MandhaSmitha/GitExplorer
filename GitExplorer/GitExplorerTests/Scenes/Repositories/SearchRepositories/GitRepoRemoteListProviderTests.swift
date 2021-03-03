@@ -80,6 +80,24 @@ class GitRepoRemoteListProviderTests: XCTestCase {
         let cellViewModel = remoteListProvider.cellViewModel(forRow: 1) as? GitRepoCellViewModel
         XCTAssertTrue(cellViewModel?.title == "struts-scan")
     }
+    func testRepoDetailModel() {
+        remoteListProvider.didUpdateSearch("Str")
+        let model = remoteListProvider.getRepoDetail(for: 0)
+        let summaryModel = model?.summaryModel
+        XCTAssertTrue(summaryModel?.title == "strapi/strapi-examples")
+        XCTAssertTrue(summaryModel?.defaultIconName == "DefaultFolderIcon")
+        XCTAssertTrue(summaryModel?.iconUrl == "https://avatars.githubusercontent.com/u/19872173?v=4")
+        XCTAssertTrue(summaryModel?.language == "JavaScript")
+        let detailListModel = model?.detailList
+        XCTAssertTrue(detailListModel?.forksCount == "545")
+        XCTAssertTrue(detailListModel?.openIssuesCount == "22")
+        XCTAssertTrue(detailListModel?.stargazersCount == "1056")
+    }
+    func testLatestVersionParameterModel() {
+        remoteListProvider.didUpdateSearch("Str")
+        let parameterModel = remoteListProvider.getRepoDetailParameterModel(for: 0)
+        XCTAssertNotNil(parameterModel)
+    }
 }
 
 /* Mock `GitRepoViewModelDelegate`. Class listening for data updates. */

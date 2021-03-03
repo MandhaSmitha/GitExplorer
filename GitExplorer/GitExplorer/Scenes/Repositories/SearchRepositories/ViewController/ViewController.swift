@@ -8,16 +8,18 @@
 import UIKit
 
 class ViewController: UIViewController, Storyboarded {
+    @IBOutlet var titleLabel: UILabel!
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
     var viewModel: GitSearchReposViewModel?
-    
+    var coordinator: GitSearchReposCoordinator?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
     }
     func setupView() {
-        self.title = NSLocalizedString("RepoListScreenTitle", comment: "Repository list screen title")
+        titleLabel.text = NSLocalizedString("RepoListScreenTitle", comment: "Repository list screen title")
         tableView.register(headerFooterViewType: GItRepoListHeaderView.self)
         searchBar.setShowsCancelButton(false, animated: false)
     }
@@ -56,7 +58,13 @@ extension ViewController: UITableViewDelegate {
         return view
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        guard let listViewModel = viewModel else {
+            return
+        }
+        let detailModel = listViewModel.getRepoDetailCellViewModel(row: indexPath.row, section: indexPath.section)
+        let parameterModel = listViewModel.getRepoDetailParameterModel(row: indexPath.row, section: indexPath.section)
+        coordinator?.navigateToDetail(detailModel: detailModel,
+                                      parameterModel: parameterModel)
     }
 }
 

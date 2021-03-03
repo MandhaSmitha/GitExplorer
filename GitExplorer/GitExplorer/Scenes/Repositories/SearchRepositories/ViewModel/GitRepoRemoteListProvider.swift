@@ -52,6 +52,15 @@ extension GitRepoRemoteListProvider: GitRepoListProviderProtocol {
         guard let data = repoSearchResponse?.items?[index] else {
             return nil
         }
+        let title = getTitle(data: data)
+        let cellViewModel = GitRepoCellViewModel(title: title,
+                                                 description: data.itemDescription,
+                                                 defaultIconName: "DefaultFolderIcon",
+                                                 iconUrl: data.owner?.avatarURL)
+        return cellViewModel
+    }
+    
+    private func getTitle(data: Item) -> String {
         let repoName = data.name ?? ""
         var title = data.owner?.login
         if title == nil {
@@ -59,11 +68,7 @@ extension GitRepoRemoteListProvider: GitRepoListProviderProtocol {
         } else {
             title?.append("/\(repoName)")
         }
-        let cellViewModel = GitRepoCellViewModel(title: title ?? "",
-                                                 description: data.itemDescription,
-                                                 defaultIconName: "DefaultFolderIcon",
-                                                 iconUrl: data.owner?.avatarURL)
-        return cellViewModel
+        return title ?? ""
     }
 }
 
@@ -97,11 +102,62 @@ extension GitRepoRemoteListProvider: GitRepoSearchProtocol {
                                successHandler: { [weak self] (_, response) in
                                 self?.repoSearchResponse = response
                                 self?.delegate?.dataUpdate()
-                               }, failureHandler: { [weak self] (_, _) in
+                               }, failureHandler: { [weak self] (_, resp) in
                                 if isNewRequest {
                                     self?.repoSearchResponse = nil
                                     self?.delegate?.dataUpdate()
                                 }
                                })
+    }
+}
+
+extension GitRepoRemoteListProvider: GitRepoDetailProviderProtocol {
+    /// Creates a repository detail model.
+    /// - Parameter index: Index of the item required to be converted to `GitRepoDetailCellViewModel`.
+    /// - Returns: `GitRepoDetailCellViewModel` with the details mapped from Item data.
+    func getRepoDetail(for index: Int) -> GitRepoDetailModel? {
+        guard let data = repoSearchResponse?.items?[index] else {
+            return nil
+        }
+        let summaryModel = getSummaryModel(data: data)
+        let listModel = getDetailsListModel(data: data)
+        let cellViewModel = GitRepoDetailModel(summaryModel: summaryModel,
+                                                       detailList: listModel)
+        return cellViewModel
+    }
+    
+    /// Creates a model with the basic details of a repository.
+    /// - Parameter data: `Item` model with data needed to construct `GitRepoDetailSummaryModel`.
+    /// - Returns: `GitRepoDetailSummaryModel` with the details mapped from item data.
+    private func getSummaryModel(data: Item) -> GitRepoDetailSummaryModel {
+        let summaryModel = GitRepoDetailSummaryModel(title: getTitle(data: data),
+                                                     defaultIconName: "DefaultFolderIcon",
+                                                     iconUrl: data.owner?.avatarURL,
+                                                     language: data.language)
+        return summaryModel
+    }
+    
+    /// Creates a list model with extra details of a repository.
+    /// - Parameter data: `Item` model with data needed to construct `GitRepoDetailsListModel`.
+    /// - Returns: `GitRepoDetailsListModel` with the details mapped from item data.
+    private func getDetailsListModel(data: Item) -> GitRepoDetailsListModel {
+        let forks = data.forks == nil ? "" : "\(data.forks!)"
+        let openIssuesCount = data.openIssuesCount == nil ? "" : "\(data.openIssuesCount!)"
+        let stargazersCount = data.stargazersCount == nil ? "" : "\(data.stargazersCount!)"
+        let detailListModel = GitRepoDetailsListModel(forksCount: forks,
+                                                      openIssuesCount: openIssuesCount,
+                                                      stargazersCount: stargazersCount)
+        return detailListModel
+    }
+    
+    /// Constructs the parameterModel needed to fetch the latestRepoVersion.
+    /// - Parameter index: Index of the item required to construct `GitLatestVersionParameterModel.`
+    /// - Returns: `GitLatestVersionParameterModel` with the required parameters.
+    func getRepoDetailParameterModel(for index: Int) -> GitLatestVersionParameterModel {
+        guard let data = repoSearchResponse?.items?[index] else {
+            return GitLatestVersionParameterModel(owner: nil, repoName: nil)
+        }
+        return GitLatestVersionParameterModel(owner: data.owner?.login,
+                                              repoName: data.name)
     }
 }
