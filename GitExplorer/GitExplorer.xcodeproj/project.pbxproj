@@ -37,6 +37,7 @@
 		5B86AFF125EECD4600DCC5F5 /* GitLatestRepoVersionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFF025EECD4500DCC5F5 /* GitLatestRepoVersionResponse.swift */; };
 		5B86AFF625EED1CA00DCC5F5 /* GitLatestVersionParameterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFF525EED1CA00DCC5F5 /* GitLatestVersionParameterModel.swift */; };
 		5B86AFFB25EED7CE00DCC5F5 /* GitRepoDetailViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AFFA25EED7CE00DCC5F5 /* GitRepoDetailViewDelegate.swift */; };
+		5B86B01525F0124300DCC5F5 /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86B01425F0124300DCC5F5 /* UIImage+Extension.swift */; };
 		5BF1554025EA8DE3008EC837 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */; };
 		5BF1554225EA8DE3008EC837 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */; };
 		5BF1554425EA8DE3008EC837 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1554325EA8DE3008EC837 /* ViewController.swift */; };
@@ -116,6 +117,7 @@
 		5B86AFF025EECD4500DCC5F5 /* GitLatestRepoVersionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLatestRepoVersionResponse.swift; sourceTree = "<group>"; };
 		5B86AFF525EED1CA00DCC5F5 /* GitLatestVersionParameterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitLatestVersionParameterModel.swift; sourceTree = "<group>"; };
 		5B86AFFA25EED7CE00DCC5F5 /* GitRepoDetailViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoDetailViewDelegate.swift; sourceTree = "<group>"; };
+		5B86B01425F0124300DCC5F5 /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
 		5BF1553C25EA8DE3008EC837 /* GitExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BF1553F25EA8DE3008EC837 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5BF1554125EA8DE3008EC837 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -453,6 +455,7 @@
 				5BF1561325EC2E57008EC837 /* Encodable+Extension.swift */,
 				5BF1563225EC3FC0008EC837 /* FileUtility.swift */,
 				5B86AFA925EE7CE800DCC5F5 /* UIStackView+Extension.swift */,
+				5B86B01425F0124300DCC5F5 /* UIImage+Extension.swift */,
 			);
 			path = Utility;
 			sourceTree = "<group>";
@@ -811,6 +814,7 @@
 				5B86AF2725EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift in Sources */,
 				5B86AF8E25EE5DAB00DCC5F5 /* GitRepoDetailViewModel.swift in Sources */,
 				5B86AF4025EE1B7B00DCC5F5 /* Storyboard+Utility.swift in Sources */,
+				5B86B01525F0124300DCC5F5 /* UIImage+Extension.swift in Sources */,
 				5BF155BA25EB610C008EC837 /* SessionHelper.swift in Sources */,
 				5BF1566C25EC57C6008EC837 /* GitSearchReposViewModel.swift in Sources */,
 				5B86AFA525EE609000DCC5F5 /* GitRepoDetailModel.swift in Sources */,

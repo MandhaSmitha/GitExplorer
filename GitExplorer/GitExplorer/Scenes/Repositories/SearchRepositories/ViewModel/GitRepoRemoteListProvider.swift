@@ -14,6 +14,7 @@ class GitRepoRemoteListProvider {
     weak var delegate: GitRepoViewModelDelegate?
     var repoSearchResponse: GitRepoListResponse?
     var parameterModel: GitReposParameterModel
+    var isLoading = false
     
     init(worker: GitSearchWorkerProtocol, identifier: GitRepoSection, delegate: GitRepoViewModelDelegate?) {
         self.worker = worker
@@ -82,6 +83,7 @@ extension GitRepoRemoteListProvider: GitRepoSearchProtocol {
     ///  Action: Get repo list by calling the API with the new search term.
     /// - Parameter text: New search text
     func didUpdateSearch(_ text: String) {
+        parameterModel.page = 1
         if parameterModel.searchQuery.count == 3 && text.count < 3 {
             parameterModel.searchQuery = text
             repoSearchResponse = nil
@@ -94,20 +96,48 @@ extension GitRepoRemoteListProvider: GitRepoSearchProtocol {
         }
     }
     
-    /// Fetch repo list by calling the API.
+    /// If an api call is not already in progress and the end of page is reached, call the api with incremented page number.
+    /// Check if all items in the list are already available. Total count is available in the response attribute `totalCount`.
+    /// Do not call the api if all the items are already fetched.
+    func didReachEndOfPage() {
+        guard let items = repoSearchResponse?.items,
+              let totalCount = repoSearchResponse?.totalCount else {
+            return
+        }
+        if !isLoading && items.count != totalCount {
+            parameterModel.page += 1
+            fetchUpdatedData(isNewRequest: false)
+        }
+    }
+    
+    /// Fetch repo list by calling the API. Reset response in case of change of search text and append if it is paginatin.
     /// - Parameter isNewRequest: `true` in case of change in search text. `false` in case of pagination.
     private func fetchUpdatedData(isNewRequest: Bool = true) {
+        isLoading = true
         worker.getRepositories(parameterModel: parameterModel,
                                isNewRequest: isNewRequest,
                                successHandler: { [weak self] (_, response) in
-                                self?.repoSearchResponse = response
+                                self?.isLoading = false
+                                if isNewRequest {
+                                    self?.repoSearchResponse = response
+                                } else if let items = response?.items {
+                                    self?.repoSearchResponse?.items?.append(contentsOf: items)
+                                }
                                 self?.delegate?.dataUpdate()
-                               }, failureHandler: { [weak self] (_, resp) in
+                               }, failureHandler: { [weak self] (_, _) in
+                                self?.isLoading = false
                                 if isNewRequest {
                                     self?.repoSearchResponse = nil
                                     self?.delegate?.dataUpdate()
+                                } else {
+                                    self?.resetPage()
                                 }
                                })
+    }
+    
+    /// If the api fails while fetching paginated results, reset page number to the one previous.
+    private func resetPage() {
+        parameterModel.page -= 1
     }
 }
 

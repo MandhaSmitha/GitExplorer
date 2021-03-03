@@ -44,6 +44,13 @@ class GitSearchReposViewModel {
             provider.didUpdateSearch(searchText)
         }
     }
+    
+    /// Inform the repo providers that the end of page is reached.
+    func didReachEndOfPage() {
+        repoProviders.forEach { (provider) in
+            provider.didReachEndOfPage?()
+        }
+    }
 }
 
 extension GitSearchReposViewModel {

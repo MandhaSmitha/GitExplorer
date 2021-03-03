@@ -10,7 +10,7 @@ import Foundation
 // MARK: - GitRepoListResponse
 struct GitRepoListResponse: Codable {
     let totalCount: Int?
-    let items: [Item]?
+    var items: [Item]?
 
     enum CodingKeys: String, CodingKey {
         case totalCount = "total_count"
