@@ -1,0 +1,1888 @@
+{
+  "warnings": [
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/AppDelegate.swift",
+      "line": 12,
+      "symbol": "AppDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/AppDelegate.swift",
+      "line": 14,
+      "symbol": "AppDelegate.application(_:didFinishLaunchingWithOptions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/AppDelegate.swift",
+      "line": 24,
+      "symbol": "AppDelegate.application(_:configurationForConnecting:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/AppDelegate.swift",
+      "line": 30,
+      "symbol": "AppDelegate.application(_:didDiscardSceneSessions:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/BaseCoordinator/BaseCoordinator.swift",
+      "line": 10,
+      "symbol": "BaseCoordinator",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/BaseCoordinator/BaseCoordinator.swift",
+      "line": 11,
+      "symbol": "BaseCoordinator.navigationController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/BaseCoordinator/BaseCoordinator.swift",
+      "line": 12,
+      "symbol": "BaseCoordinator.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkManager.swift",
+      "line": 21,
+      "symbol": "NetworkManager",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkProvider.swift",
+      "line": 14,
+      "symbol": "NetworkProvider.request(_:mapToSuccessModel:successHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 14,
+      "symbol": "HttpMethod.get",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 15,
+      "symbol": "HttpMethod.post",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 16,
+      "symbol": "HttpMethod.head",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 17,
+      "symbol": "HttpMethod.put",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 18,
+      "symbol": "HttpMethod.delete",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 19,
+      "symbol": "HttpMethod.patch",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/HttpMethod.swift",
+      "line": 21,
+      "symbol": "HttpMethod.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 11,
+      "symbol": "Params",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 12,
+      "symbol": "NetworkRequest",
+      "symbol_kind": "source.lang.swift.decl.typealias",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 16,
+      "symbol": "BaseNetworkRequest.baseUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 17,
+      "symbol": "BaseNetworkRequest.endpoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 18,
+      "symbol": "BaseNetworkRequest.parameters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 19,
+      "symbol": "BaseNetworkRequest.method",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 20,
+      "symbol": "BaseNetworkRequest.headers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 21,
+      "symbol": "BaseNetworkRequest.encoding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 22,
+      "symbol": "BaseNetworkRequest.successResponseFileName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 23,
+      "symbol": "BaseNetworkRequest.failureResponseFileName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 29,
+      "symbol": "BaseNetworkRequest.baseUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 32,
+      "symbol": "BaseNetworkRequest.headers",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 35,
+      "symbol": "BaseNetworkRequest.encoding",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 43,
+      "symbol": "BaseNetworkRequest.successResponseFileName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/NetworkRequest.swift",
+      "line": 46,
+      "symbol": "BaseNetworkRequest.failureResponseFileName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/ParamEncoding.swift",
+      "line": 14,
+      "symbol": "ParamEncoding.urlEncoding",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/ParamEncoding.swift",
+      "line": 15,
+      "symbol": "ParamEncoding.jsonEncoding",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/NetworkRequest/ParamEncoding.swift",
+      "line": 17,
+      "symbol": "ParamEncoding.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/SessionHelper.swift",
+      "line": 14,
+      "symbol": "SessionHelper.sessionManager",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/NetworkManager/SessionHelper.swift",
+      "line": 17,
+      "symbol": "SessionHelper.shared",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 11,
+      "symbol": "SceneDelegate",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 13,
+      "symbol": "SceneDelegate.window",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 15,
+      "symbol": "SceneDelegate.scene(_:willConnectTo:options:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 29,
+      "symbol": "SceneDelegate.sceneDidDisconnect(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 36,
+      "symbol": "SceneDelegate.sceneDidBecomeActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 41,
+      "symbol": "SceneDelegate.sceneWillResignActive(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 46,
+      "symbol": "SceneDelegate.sceneWillEnterForeground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/SceneDelegate.swift",
+      "line": 51,
+      "symbol": "SceneDelegate.sceneDidEnterBackground(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 10,
+      "symbol": "GitRepoDetailCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 11,
+      "symbol": "GitRepoDetailCoordinator.navigationController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 12,
+      "symbol": "GitRepoDetailCoordinator.detailModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 13,
+      "symbol": "GitRepoDetailCoordinator.parameterModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 15,
+      "symbol": "GitRepoDetailCoordinator.init(navigationController:detailModel:parameterModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 23,
+      "symbol": "GitRepoDetailCoordinator.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Coordinator/GitRepoDetailCoordinator.swift",
+      "line": 38,
+      "symbol": "GitRepoDetailCoordinator.navigateToRepoList()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestRepoVersionResponse.swift",
+      "line": 11,
+      "symbol": "GitLatestRepoVersionResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestRepoVersionResponse.swift",
+      "line": 12,
+      "symbol": "GitLatestRepoVersionResponse.version",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestRepoVersionResponse.swift",
+      "line": 14,
+      "symbol": "GitLatestRepoVersionResponse.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestRepoVersionResponse.swift",
+      "line": 15,
+      "symbol": "GitLatestRepoVersionResponse.CodingKeys.version",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestVersionParameterModel.swift",
+      "line": 10,
+      "symbol": "GitLatestVersionParameterModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestVersionParameterModel.swift",
+      "line": 11,
+      "symbol": "GitLatestVersionParameterModel.owner",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/GitLatestVersionParameterModel.swift",
+      "line": 12,
+      "symbol": "GitLatestVersionParameterModel.repoName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/KeyValueDetailModel.swift",
+      "line": 10,
+      "symbol": "KeyValueDetailModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/KeyValueDetailModel.swift",
+      "line": 11,
+      "symbol": "KeyValueDetailModel.key",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Model/KeyValueDetailModel.swift",
+      "line": 12,
+      "symbol": "KeyValueDetailModel.value",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 11,
+      "symbol": "GitRepoDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 12,
+      "symbol": "GitRepoDetailViewController.summaryStackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 13,
+      "symbol": "GitRepoDetailViewController.iconView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 14,
+      "symbol": "GitRepoDetailViewController.iconImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 15,
+      "symbol": "GitRepoDetailViewController.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 16,
+      "symbol": "GitRepoDetailViewController.languageLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 17,
+      "symbol": "GitRepoDetailViewController.detailContainer",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 18,
+      "symbol": "GitRepoDetailViewController.detailStackView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 19,
+      "symbol": "GitRepoDetailViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 20,
+      "symbol": "GitRepoDetailViewController.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 22,
+      "symbol": "GitRepoDetailViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 30,
+      "symbol": "GitRepoDetailViewController.didTapBackButton(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 36,
+      "symbol": "GitRepoDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 37,
+      "symbol": "GitRepoDetailViewController.setupSummaryView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 57,
+      "symbol": "GitRepoDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 58,
+      "symbol": "GitRepoDetailViewController.setupDetailView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 77,
+      "symbol": "GitRepoDetailViewController.setupDetailContainer()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 83,
+      "symbol": "GitRepoDetailViewController.getSpacerView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 90,
+      "symbol": "GitRepoDetailViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewController.swift",
+      "line": 91,
+      "symbol": "GitRepoDetailViewController.refreshDetailList()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewDelegate.swift",
+      "line": 10,
+      "symbol": "GitRepoDetailViewDelegate",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewController/GitRepoDetailViewDelegate.swift",
+      "line": 11,
+      "symbol": "GitRepoDetailViewDelegate.refreshDetailList()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 10,
+      "symbol": "GitRepoDetailViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 11,
+      "symbol": "GitRepoDetailViewModel.worker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 12,
+      "symbol": "GitRepoDetailViewModel.parameterModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 13,
+      "symbol": "GitRepoDetailViewModel.versionResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 14,
+      "symbol": "GitRepoDetailViewModel.detailModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 15,
+      "symbol": "GitRepoDetailViewModel.detailKeyList",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 16,
+      "symbol": "GitRepoDetailViewModel.viewDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 18,
+      "symbol": "GitRepoDetailViewModel.init(worker:detailModel:parameterModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 26,
+      "symbol": "GitRepoDetailViewModel.loadData()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 71,
+      "symbol": "GitRepoDetailViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/ViewModel/GitRepoDetailViewModel.swift",
+      "line": 72,
+      "symbol": "GitRepoDetailViewModel.getLatestVersion()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 11,
+      "symbol": "GitRepoDetailModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 12,
+      "symbol": "GitRepoDetailModel.summaryModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 13,
+      "symbol": "GitRepoDetailModel.detailList",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 16,
+      "symbol": "GitRepoDetailSummaryModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 17,
+      "symbol": "GitRepoDetailSummaryModel.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 18,
+      "symbol": "GitRepoDetailSummaryModel.defaultIconName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 19,
+      "symbol": "GitRepoDetailSummaryModel.iconUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 20,
+      "symbol": "GitRepoDetailSummaryModel.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 23,
+      "symbol": "GitRepoDetailsListModel",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 24,
+      "symbol": "GitRepoDetailsListModel.forksCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 25,
+      "symbol": "GitRepoDetailsListModel.openIssuesCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 26,
+      "symbol": "GitRepoDetailsListModel.stargazersCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 27,
+      "symbol": "GitRepoDetailsListModel.lastReleaseVersion",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/GitRepoDetailModel.swift",
+      "line": 29,
+      "symbol": "GitRepoDetailsListModel.init(forksCount:openIssuesCount:stargazersCount:lastReleaseVersion:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 10,
+      "symbol": "KeyValueDetailView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 11,
+      "symbol": "KeyValueDetailView.keyLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 12,
+      "symbol": "KeyValueDetailView.valueLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 13,
+      "symbol": "KeyValueDetailView.dividerView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 15,
+      "symbol": "KeyValueDetailView.init(frame:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 20,
+      "symbol": "KeyValueDetailView.init(coder:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 25,
+      "symbol": "KeyValueDetailView.loadViewFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/RepositoryDetail/Views/KeyValueDetailView.swift",
+      "line": 35,
+      "symbol": "KeyValueDetailView.bindData(key:value:isDividerHidden:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Coordinator/GitSearchReposCoordinator.swift",
+      "line": 10,
+      "symbol": "GitSearchReposCoordinator",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Coordinator/GitSearchReposCoordinator.swift",
+      "line": 11,
+      "symbol": "GitSearchReposCoordinator.navigationController",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Coordinator/GitSearchReposCoordinator.swift",
+      "line": 13,
+      "symbol": "GitSearchReposCoordinator.init(navigationController:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Coordinator/GitSearchReposCoordinator.swift",
+      "line": 17,
+      "symbol": "GitSearchReposCoordinator.start()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Coordinator/GitSearchReposCoordinator.swift",
+      "line": 31,
+      "symbol": "GitSearchReposCoordinator",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Coordinator/GitSearchReposCoordinator.swift",
+      "line": 32,
+      "symbol": "GitSearchReposCoordinator.navigateToDetail(detailModel:parameterModel:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoCellViewModel.swift",
+      "line": 12,
+      "symbol": "GitRepoCellViewModel.title",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoCellViewModel.swift",
+      "line": 13,
+      "symbol": "GitRepoCellViewModel.description",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoCellViewModel.swift",
+      "line": 14,
+      "symbol": "GitRepoCellViewModel.defaultIconName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoCellViewModel.swift",
+      "line": 15,
+      "symbol": "GitRepoCellViewModel.iconUrl",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 11,
+      "symbol": "GitRepoListResponse",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 12,
+      "symbol": "GitRepoListResponse.totalCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 13,
+      "symbol": "GitRepoListResponse.items",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 15,
+      "symbol": "GitRepoListResponse.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 16,
+      "symbol": "GitRepoListResponse.CodingKeys.totalCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 17,
+      "symbol": "GitRepoListResponse.CodingKeys.items",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 22,
+      "symbol": "Item",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 23,
+      "symbol": "Item.itemId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 24,
+      "symbol": "Item.fullName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 24,
+      "symbol": "Item.name",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 24,
+      "symbol": "Item.nodeID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 25,
+      "symbol": "Item.owner",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 26,
+      "symbol": "Item.itemDescription",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 27,
+      "symbol": "Item.stargazersCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 27,
+      "symbol": "Item.watchersCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 28,
+      "symbol": "Item.language",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 29,
+      "symbol": "Item.forks",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 29,
+      "symbol": "Item.openIssuesCount",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 31,
+      "symbol": "Item.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 32,
+      "symbol": "Item.CodingKeys.itemId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 33,
+      "symbol": "Item.CodingKeys.nodeID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 34,
+      "symbol": "Item.CodingKeys.name",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 35,
+      "symbol": "Item.CodingKeys.fullName",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 36,
+      "symbol": "Item.CodingKeys.owner",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 37,
+      "symbol": "Item.CodingKeys.itemDescription",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 38,
+      "symbol": "Item.CodingKeys.stargazersCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 39,
+      "symbol": "Item.CodingKeys.watchersCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 40,
+      "symbol": "Item.CodingKeys.language",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 41,
+      "symbol": "Item.CodingKeys.openIssuesCount",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 42,
+      "symbol": "Item.CodingKeys.forks",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 47,
+      "symbol": "Owner",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 48,
+      "symbol": "Owner.login",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 49,
+      "symbol": "Owner.ownerId",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 50,
+      "symbol": "Owner.nodeID",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 51,
+      "symbol": "Owner.avatarURL",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 53,
+      "symbol": "Owner.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 54,
+      "symbol": "Owner.CodingKeys.login",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 55,
+      "symbol": "Owner.CodingKeys.ownerId",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 56,
+      "symbol": "Owner.CodingKeys.nodeID",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitRepoListResponse.swift",
+      "line": 57,
+      "symbol": "Owner.CodingKeys.avatarURL",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitReposParameterModel.swift",
+      "line": 13,
+      "symbol": "GitReposParameterModel.searchQuery",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitReposParameterModel.swift",
+      "line": 14,
+      "symbol": "GitReposParameterModel.page",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitReposParameterModel.swift",
+      "line": 16,
+      "symbol": "GitReposParameterModel.CodingKeys",
+      "symbol_kind": "source.lang.swift.decl.enum",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitReposParameterModel.swift",
+      "line": 17,
+      "symbol": "GitReposParameterModel.CodingKeys.searchQuery",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Model/GitReposParameterModel.swift",
+      "line": 18,
+      "symbol": "GitReposParameterModel.CodingKeys.page",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/GitRepoViewDelegate.swift",
+      "line": 12,
+      "symbol": "GitRepoViewDelegate.refreshView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 10,
+      "symbol": "SearchBarConstants",
+      "symbol_kind": "source.lang.swift.decl.struct",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 11,
+      "symbol": "SearchBarConstants.height",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 12,
+      "symbol": "SearchBarConstants.margin",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 13,
+      "symbol": "SearchBarConstants.radius",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 16,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 17,
+      "symbol": "ViewController.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 18,
+      "symbol": "ViewController.searchBar",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 19,
+      "symbol": "ViewController.tableView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 20,
+      "symbol": "ViewController.viewModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 21,
+      "symbol": "ViewController.coordinator",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 23,
+      "symbol": "ViewController.viewDidLoad()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 28,
+      "symbol": "ViewController.setupView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 67,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 68,
+      "symbol": "ViewController.searchBar(_:textDidChange:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 71,
+      "symbol": "ViewController.searchBarSearchButtonClicked(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 76,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 77,
+      "symbol": "ViewController.numberOfSections(in:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 80,
+      "symbol": "ViewController.tableView(_:numberOfRowsInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 83,
+      "symbol": "ViewController.tableView(_:cellForRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 93,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 94,
+      "symbol": "ViewController.tableView(_:viewForHeaderInSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 99,
+      "symbol": "ViewController.tableView(_:didSelectRowAt:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 119,
+      "symbol": "ViewController",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewController/ViewController.swift",
+      "line": 120,
+      "symbol": "ViewController.refreshView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 15,
+      "symbol": "GitRepoListProviderProtocol.worker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 16,
+      "symbol": "GitRepoListProviderProtocol.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 17,
+      "symbol": "GitRepoListProviderProtocol.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 18,
+      "symbol": "GitRepoListProviderProtocol.numberOfRows()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 19,
+      "symbol": "GitRepoListProviderProtocol.titleForHeader()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 20,
+      "symbol": "GitRepoListProviderProtocol.cellViewModel(forRow:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 25,
+      "symbol": "GitRepoSearchProtocol.didUpdateSearch(_:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 26,
+      "symbol": "GitRepoSearchProtocol.didReachEndOfPage()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 31,
+      "symbol": "GitRepoDetailProviderProtocol.getRepoDetail(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoProviderProtocol.swift",
+      "line": 32,
+      "symbol": "GitRepoDetailProviderProtocol.getRepoDetailParameterModel(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 12,
+      "symbol": "GitRepoRemoteListProvider.worker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 13,
+      "symbol": "GitRepoRemoteListProvider.identifier",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 14,
+      "symbol": "GitRepoRemoteListProvider.delegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 15,
+      "symbol": "GitRepoRemoteListProvider.repoSearchResponse",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 16,
+      "symbol": "GitRepoRemoteListProvider.parameterModel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 17,
+      "symbol": "GitRepoRemoteListProvider.isLoading",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 19,
+      "symbol": "GitRepoRemoteListProvider.init(worker:identifier:delegate:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 28,
+      "symbol": "GitRepoRemoteListProvider.numberOfRows()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoRemoteListProvider.swift",
+      "line": 64,
+      "symbol": "GitRepoRemoteListProvider.getTitle(data:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitRepoViewModelDelegate.swift",
+      "line": 12,
+      "symbol": "GitRepoViewModelDelegate.dataUpdate()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 12,
+      "symbol": "GitRepoSection.remoteList",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 15,
+      "symbol": "GitSearchReposViewModel",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 16,
+      "symbol": "GitSearchReposViewModel.worker",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 17,
+      "symbol": "GitSearchReposViewModel.repoProviders",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 18,
+      "symbol": "GitSearchReposViewModel.viewDelegate",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 20,
+      "symbol": "GitSearchReposViewModel.init(worker:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 57,
+      "symbol": "GitSearchReposViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 68,
+      "symbol": "GitSearchReposViewModel.numberOfRows(inSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 72,
+      "symbol": "GitSearchReposViewModel.titleForHeader(inSection:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 88,
+      "symbol": "GitSearchReposViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/ViewModel/GitSearchReposViewModel.swift",
+      "line": 95,
+      "symbol": "GitSearchReposViewModel",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GItRepoListHeaderView.swift",
+      "line": 10,
+      "symbol": "GItRepoListHeaderView",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GItRepoListHeaderView.swift",
+      "line": 11,
+      "symbol": "GItRepoListHeaderView.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GItRepoListHeaderView.swift",
+      "line": 13,
+      "symbol": "GItRepoListHeaderView.bindData(title:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GitRepoTableViewCell.swift",
+      "line": 11,
+      "symbol": "GitRepoTableViewCell",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GitRepoTableViewCell.swift",
+      "line": 12,
+      "symbol": "GitRepoTableViewCell.titleLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GitRepoTableViewCell.swift",
+      "line": 13,
+      "symbol": "GitRepoTableViewCell.descriptionLabel",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GitRepoTableViewCell.swift",
+      "line": 14,
+      "symbol": "GitRepoTableViewCell.iconImageView",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GitRepoTableViewCell.swift",
+      "line": 16,
+      "symbol": "GitRepoTableViewCell.awakeFromNib()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/SearchRepositories/Views/GitRepoTableViewCell.swift",
+      "line": 20,
+      "symbol": "GitRepoTableViewCell.setSelected(_:animated:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/GitSearchWorker.swift",
+      "line": 13,
+      "symbol": "GitSearchWorker.serviceProvider",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/GitSearchWorker.swift",
+      "line": 14,
+      "symbol": "GitSearchWorker.init(serviceProvider:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/GitSearchWorkerProtocol.swift",
+      "line": 13,
+      "symbol": "GitSearchWorkerProtocol.getRepositories(parameterModel:isNewRequest:successHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/GitVersionWorker.swift",
+      "line": 13,
+      "symbol": "GitVersionWorker.serviceProvider",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/GitVersionWorker.swift",
+      "line": 14,
+      "symbol": "GitVersionWorker.init(serviceProvider:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/GitVersionWorkerProtocol.swift",
+      "line": 12,
+      "symbol": "GitVersionWorkerProtocol.getLatestRepo(owner:repoName:successHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchServiceHandler.swift",
+      "line": 11,
+      "symbol": "GitSearchServiceHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchServiceHandler.swift",
+      "line": 16,
+      "symbol": "GitSearchServiceHandler.init(networkProvider:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchServiceHandler.swift",
+      "line": 21,
+      "symbol": "GitSearchServiceHandler",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchServiceProvider.swift",
+      "line": 12,
+      "symbol": "GitSearchServiceProvider.getRepositories(parameterModel:isNewRequest:successHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchTarget.swift",
+      "line": 12,
+      "symbol": "GitSearchTarget.getRepos(params:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchTarget.swift",
+      "line": 13,
+      "symbol": "GitSearchTarget.getLatestRelease(owner:repo:)",
+      "symbol_kind": "source.lang.swift.decl.enumelement",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchTarget.swift",
+      "line": 18,
+      "symbol": "GitSearchTarget.endpoint",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchTarget.swift",
+      "line": 26,
+      "symbol": "GitSearchTarget.parameters",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchTarget.swift",
+      "line": 34,
+      "symbol": "GitSearchTarget.method",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitSearchTarget.swift",
+      "line": 40,
+      "symbol": "GitSearchTarget.successResponseFileName",
+      "symbol_kind": "source.lang.swift.decl.var.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitVersionServiceHandler.swift",
+      "line": 10,
+      "symbol": "GitVersionServiceHandler",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitVersionServiceHandler.swift",
+      "line": 13,
+      "symbol": "GitVersionServiceHandler.init(networkProvider:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitVersionServiceHandler.swift",
+      "line": 18,
+      "symbol": "GitVersionServiceHandler",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Scenes/Repositories/Worker/Services/GitVersionServiceProvider.swift",
+      "line": 12,
+      "symbol": "GitVersionServiceProvider.getLatestRepo(owner:repoName:successHandler:failureHandler:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/FileUtility.swift",
+      "line": 10,
+      "symbol": "FileUtility",
+      "symbol_kind": "source.lang.swift.decl.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/Storyboard+Utility.swift",
+      "line": 10,
+      "symbol": "Storyboarded",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/Storyboard+Utility.swift",
+      "line": 11,
+      "symbol": "Storyboarded.instantiate(storyboardName:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/Storyboard+Utility.swift",
+      "line": 14,
+      "symbol": "Storyboarded",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UIImage+Extension.swift",
+      "line": 11,
+      "symbol": "UIImage.imageWithColor(color:size:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UIImage+Extension.swift",
+      "line": 20,
+      "symbol": "UIImage.roundedImage(image:cornerRadius:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.class",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableView+Extension.swift",
+      "line": 11,
+      "symbol": "UITableView.dequeueReusableCell(for:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableView+Extension.swift",
+      "line": 17,
+      "symbol": "UITableView.dequeueReusableHeaderFooterView()",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableView+Extension.swift",
+      "line": 23,
+      "symbol": "UITableView.register(headerFooterViewType:)",
+      "symbol_kind": "source.lang.swift.decl.function.method.instance",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableViewCell+Extension.swift",
+      "line": 10,
+      "symbol": "Reusable",
+      "symbol_kind": "source.lang.swift.decl.protocol",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableViewCell+Extension.swift",
+      "line": 11,
+      "symbol": "Reusable.reuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableViewCell+Extension.swift",
+      "line": 14,
+      "symbol": "Reusable",
+      "symbol_kind": "source.lang.swift.decl.extension",
+      "warning": "undocumented"
+    },
+    {
+      "file": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer/GitExplorer/Utility/UITableViewCell+Extension.swift",
+      "line": 15,
+      "symbol": "Reusable.reuseIdentifier",
+      "symbol_kind": "source.lang.swift.decl.var.static",
+      "warning": "undocumented"
+    }
+  ],
+  "source_directory": "/Users/mandhasmitha/Documents/GitExplorer/GitExplorer"
+}
