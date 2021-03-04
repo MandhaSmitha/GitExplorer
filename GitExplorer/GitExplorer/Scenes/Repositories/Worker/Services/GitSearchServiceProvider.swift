@@ -1,15 +1,14 @@
 //
-//  GitSearchWorkerProtocol.swift
+//  GitSearchServiceProvider.swift
 //  GitExplorer
 //
-//  Created by Mandha Smitha S on 28/02/2021.
+//  Created by Mandha Smitha S on 04/03/2021.
 //
 
 import Foundation
 
-/// Worker protocol for Git repo search APIs. Works as an interface between the ViewModel and ServiceHandlers.
-/// Declare any service or data handling tasks here.
-protocol GitSearchWorkerProtocol {
+/// Service provider protocol for Git repo search APIs.
+protocol GitSearchServiceProvider {
     func getRepositories(parameterModel: GitReposParameterModel,
                          isNewRequest: Bool,
                          successHandler: @escaping (Int?, GitRepoListResponse?) -> Void,

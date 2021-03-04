@@ -42,10 +42,10 @@ class NetworkManager: NetworkProvider {
     ///   - failureHandler: Completion handler in case of a failure response.
     ///   Return HTTP status code and optionally an error string.
     /// - Returns: Alamofire `DataRequest`.  Use if the calling class needs a reference of the DataRequest.
-    func request<T: Codable>(_ request: NetworkRequest,
-                             mapToSuccessModel successModel: T.Type,
-                             successHandler: @escaping SuccessBlock<T>,
-                             failureHandler: @escaping FailureBlock) -> DataRequest? {
+    @discardableResult func request<T: Codable>(_ request: NetworkRequest,
+                                                mapToSuccessModel successModel: T.Type,
+                                                successHandler: @escaping SuccessBlock<T>,
+                                                failureHandler: @escaping FailureBlock) -> DataRequest? {
         let networkRequest: DataRequest = getDataRequest(request)
         networkRequest.validate().responseData { (response) in
             self.handleResponse(response,

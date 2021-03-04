@@ -40,8 +40,9 @@ class GitSearchReposViewModel {
     /// Communicates change in search text to providers.
     /// - Parameter searchText: new searchText.
     func didUpdateSearch(_ searchText: String) {
+        let text = searchText.trimmingCharacters(in: .whitespacesAndNewlines)
         repoProviders.forEach { (provider) in
-            provider.didUpdateSearch(searchText)
+            provider.didUpdateSearch(text)
         }
     }
     

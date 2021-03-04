@@ -37,6 +37,7 @@ class ViewController: UIViewController, Storyboarded {
     /// Custom search background
     /// Icon left padding = 15, textField left padding = 15, Default padding = 5, custom padding = 10
     func setupSearchBar() {
+        searchBar.placeholder = NSLocalizedString("SearchPlaceHolder", comment: "Search repo placeholder")
         searchBar.setImage(UIImage(named: "SearchIcon"), for: .search, state: .normal)
         let color = UIColor(red: 0.922, green: 0.929, blue: 0.953, alpha: 1)
         let size = CGSize(width: searchBar.frame.width - (SearchBarConstants.margin * 2),
@@ -60,6 +61,7 @@ class ViewController: UIViewController, Storyboarded {
             }
         }
         searchTextField?.clearButtonMode = .never
+        searchTextField?.textColor = UIColor(red: 0.201, green: 0.234, blue: 0.321, alpha: 1)
     }
 }
 extension ViewController: UISearchBarDelegate {
