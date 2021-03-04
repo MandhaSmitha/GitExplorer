@@ -9,6 +9,7 @@
 /* GitSearchRepo Strings */
 "HeaderTitle" = "{count} results";
 "RepoListScreenTitle" = "Repository Library";
+"SearchPlaceHolder" = "Search for repository";
 
 /* GitSearchRepo detail Strings */
 "Forks" = "Forks";
