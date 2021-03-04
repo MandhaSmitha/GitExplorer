@@ -18,7 +18,7 @@ class GitSearchServiceHandler {
     }
 }
 
-extension GitSearchServiceHandler {
+extension GitSearchServiceHandler: GitSearchServiceProvider {
     /// Constructs the `NetworkRequest` to search GIt repos with a specific search term.
     /// - Parameter parameterModel: Contains the query parameters required for the Git repos search API call.
     /// - Returns: `NetworkRequest`
@@ -51,38 +51,6 @@ extension GitSearchServiceHandler {
         }
         dataRequest = networkProvider.request(request,
                                               mapToSuccessModel: GitRepoListResponse.self,
-                                              successHandler: { (status, response) in
-                                                successHandler(status, response)
-                                              }, failureHandler: { (status, error) in
-                                                failureHandler(status, error)
-                                              })
-    }
-}
-
-extension GitSearchServiceHandler {
-    /// Constructs the `NetworkRequest` to get the latest version of the repository.
-    /// - Parameters:
-    ///   - owner: Name of the repository owner.
-    ///   - repoName: Name of the repository.
-    /// - Returns: `NetworkRequest
-    private func getLatestRepoVersionTarget(owner: String, repoName: String) -> GitSearchTarget {
-        return GitSearchTarget.getLatestRelease(owner: owner, repo: repoName)
-    }
-    
-    /// Fetch latest repository version. Talks to the NetworkProvider to call the API.
-    /// - Parameters:
-    ///   - owner: Name of the repository owner.
-    ///   - repoName: Name of the repository.
-    ///   - successHandler: Completion handler in case of a success response.
-    ///                    Returns status and GitLatestRepoVersionResponse?.
-    ///   - failureHandler: Completion handler in case of a failure response. Returns status and the error string.
-    func getLatestRepo(owner: String,
-                       repoName: String,
-                       successHandler: @escaping (Int?, GitLatestRepoVersionResponse?) -> Void,
-                       failureHandler: @escaping (Int?, String?) -> Void) {
-        let request = getLatestRepoVersionTarget(owner: owner, repoName: repoName)
-        dataRequest = networkProvider.request(request,
-                                              mapToSuccessModel: GitLatestRepoVersionResponse.self,
                                               successHandler: { (status, response) in
                                                 successHandler(status, response)
                                               }, failureHandler: { (status, error) in

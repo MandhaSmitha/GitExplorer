@@ -24,8 +24,8 @@ class GitRepoDetailCoordinator: BaseCoordinator {
         guard let viewController = GitRepoDetailViewController.instantiate(storyboardName: "Main") else {
             return
         }
-        let serviceProvider = GitSearchServiceHandler(networkProvider: NetworkManager())
-        let worker = GitSearchWorker(serviceProvider: serviceProvider)
+        let serviceProvider = GitVersionServiceHandler(networkProvider: NetworkManager())
+        let worker = GitVersionWorker(serviceProvider: serviceProvider)
         let viewModel = GitRepoDetailViewModel(worker: worker,
                                                detailModel: detailModel,
                                                parameterModel: parameterModel)
