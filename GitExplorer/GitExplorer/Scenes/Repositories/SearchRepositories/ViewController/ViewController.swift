@@ -17,8 +17,8 @@ class ViewController: UIViewController, Storyboarded {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
-    var viewModel: GitSearchReposViewModel?
-    var coordinator: GitSearchReposCoordinator?
+    var viewModel: GitRepoViewModel?
+    var coordinator: GitRepoCoordinator?
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -13,11 +13,13 @@ class GitRepoDetailViewModelTests: XCTestCase {
     override func setUpWithError() throws {
         let serviceProvider = GitSearchServiceHandler(networkProvider: MockNetworkManager())
         let worker = GitSearchWorker(serviceProvider: serviceProvider)
-        let listViewModel = GitSearchReposViewModel(worker: worker)
+        let listViewModel = GitRepoViewModel(worker: worker)
         listViewModel.didUpdateSearch("Str")
+        let versionServiceProvider = GitVersionServiceHandler(networkProvider: MockNetworkManager())
+        let versionWorker = GitVersionWorker(serviceProvider: versionServiceProvider)
         let detailModel = listViewModel.getRepoDetailCellViewModel(row: 0, section: 0)
         let parameterModel = listViewModel.getRepoDetailParameterModel(row: 0, section: 0)
-        detailViewModel = GitRepoDetailViewModel(worker: worker,
+        detailViewModel = GitRepoDetailViewModel(worker: versionWorker,
                                                  detailModel: detailModel,
                                                  parameterModel: parameterModel)
     }

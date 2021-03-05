@@ -22,7 +22,7 @@ extension GitSearchServiceHandler: GitSearchServiceProvider {
     /// Constructs the `NetworkRequest` to search GIt repos with a specific search term.
     /// - Parameter parameterModel: Contains the query parameters required for the Git repos search API call.
     /// - Returns: `NetworkRequest`
-    private func getGitSearchReposTarget(parameterModel: GitReposParameterModel) -> GitSearchTarget? {
+    private func getGitSearchReposTarget(parameterModel: GitRepoParameterModel) -> GitSearchTarget? {
         do {
             let parameters = try parameterModel.toDictionary()
             return GitSearchTarget.getRepos(params: parameters)
@@ -38,7 +38,7 @@ extension GitSearchServiceHandler: GitSearchServiceProvider {
     ///   - successHandler: Completion handler in case of a success response.
     ///   				 Returns status and GitRepoListResponse?.
     ///   - failureHandler: Completion handler in case of a failure response. Returns status and the error string.
-    func getRepositories(parameterModel: GitReposParameterModel,
+    func getRepositories(parameterModel: GitRepoParameterModel,
                          isNewRequest: Bool,
                          successHandler: @escaping (Int?, GitRepoListResponse?) -> Void,
                          failureHandler: @escaping (Int?, String?) -> Void) {

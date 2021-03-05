@@ -13,14 +13,14 @@ class GitRepoRemoteListProvider {
     var identifier: GitRepoSection
     weak var delegate: GitRepoViewModelDelegate?
     var repoSearchResponse: GitRepoListResponse?
-    var parameterModel: GitReposParameterModel
+    var parameterModel: GitRepoParameterModel
     var isLoading = false
     
     init(worker: GitSearchWorkerProtocol, identifier: GitRepoSection, delegate: GitRepoViewModelDelegate?) {
         self.worker = worker
         self.identifier = identifier
         self.delegate = delegate
-        parameterModel = GitReposParameterModel(searchQuery: "", page: 1)
+        parameterModel = GitRepoParameterModel(searchQuery: "", page: 1)
     }
 }
 

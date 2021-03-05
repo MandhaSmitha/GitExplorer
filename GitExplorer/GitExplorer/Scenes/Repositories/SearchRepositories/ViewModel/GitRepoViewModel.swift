@@ -1,5 +1,5 @@
 //
-//  GitSearchReposViewModel.swift
+//  GitRepoViewModel.swift
 //  GitExplorer
 //
 //  Created by Mandha Smitha S on 01/03/2021.
@@ -12,7 +12,7 @@ enum GitRepoSection {
     case remoteList
 }
 
-class GitSearchReposViewModel {
+class GitRepoViewModel {
     var worker: GitSearchWorkerProtocol
     private var repoProviders: [GitRepoProviderProtocol] = [GitRepoProviderProtocol]()
     weak var viewDelegate: GitRepoViewDelegate?
@@ -54,7 +54,7 @@ class GitSearchReposViewModel {
     }
 }
 
-extension GitSearchReposViewModel {
+extension GitRepoViewModel {
     /// Returns number of sections to be displayed based on the data available.
     /// - Returns: Section count.
     func numberOfSections() -> Int {
@@ -85,14 +85,14 @@ extension GitSearchReposViewModel {
     }
 }
 
-extension GitSearchReposViewModel: GitRepoViewModelDelegate {
+extension GitRepoViewModel: GitRepoViewModelDelegate {
     /// Updates the view to refresh.
     func dataUpdate() {
         viewDelegate?.refreshView()
     }
 }
 
-extension GitSearchReposViewModel {
+extension GitRepoViewModel {
     /// Gets `GitRepoDetailCellViewModel` from relevant Provider.
     /// - Parameters:
     ///   - row: Index of the row in section.

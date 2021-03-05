@@ -9,12 +9,12 @@ import XCTest
 @testable import GitExplorer
 
 class GitSearchReposViewModelTests: XCTestCase {
-    var viewModel: GitSearchReposViewModel!
+    var viewModel: GitRepoViewModel!
 
     override func setUpWithError() throws {
         let serviceProvider = GitSearchServiceHandler(networkProvider: MockNetworkManager())
         let worker = GitSearchWorker(serviceProvider: serviceProvider)
-        viewModel = GitSearchReposViewModel(worker: worker)
+        viewModel = GitRepoViewModel(worker: worker)
     }
 
     override func tearDownWithError() throws {

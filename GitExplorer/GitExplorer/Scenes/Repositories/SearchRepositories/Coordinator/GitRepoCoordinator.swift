@@ -1,5 +1,5 @@
 //
-//  GitSearchReposCoordinator.swift
+//  GitRepoCoordinator.swift
 //  GitExplorer
 //
 //  Created by Mandha Smitha S on 02/03/2021.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class GitSearchReposCoordinator: BaseCoordinator {
+class GitRepoCoordinator: BaseCoordinator {
     var navigationController: UINavigationController?
     
     init(navigationController: UINavigationController?) {
@@ -20,7 +20,7 @@ class GitSearchReposCoordinator: BaseCoordinator {
         }
         let serviceProvider = GitSearchServiceHandler(networkProvider: NetworkManager())
         let worker = GitSearchWorker(serviceProvider: serviceProvider)
-        let viewModel = GitSearchReposViewModel(worker: worker)
+        let viewModel = GitRepoViewModel(worker: worker)
         viewModel.viewDelegate = viewController
         viewController.viewModel = viewModel
         viewController.coordinator = self
@@ -28,7 +28,7 @@ class GitSearchReposCoordinator: BaseCoordinator {
     }
 }
 
-extension GitSearchReposCoordinator {
+extension GitRepoCoordinator {
     func navigateToDetail(detailModel: GitRepoDetailModel?, parameterModel: GitLatestVersionParameterModel) {
         let detailCoordinator = GitRepoDetailCoordinator(navigationController: navigationController,
                                                          detailModel: detailModel,
