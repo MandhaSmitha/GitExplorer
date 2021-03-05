@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>GitRepoRemoteListProvider Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+    <script src="../js/lunr.min.js" defer></script>
+    <script src="../js/typeahead.jquery.js" defer></script>
+    <script src="../js/jazzy.search.js" defer></script>
+  </head>
+  <body>
+    <a name="//apple_ref/swift/Class/GitRepoRemoteListProvider" class="dashAnchor"></a>
+    <a title="GitRepoRemoteListProvider Class Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="../index.html"> Docs</a> (21% documented)</p>
+        <p class="header-right">
+          <form role="search" action="../search.json">
+            <input type="text" placeholder="Search documentation" data-typeahead>
+          </form>
+        </p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="../index.html"> Reference</a>
+        <img id="carat" src="../img/carat.png" />
+        GitRepoRemoteListProvider Class Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Classes/AppDelegate.html">AppDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/FileUtility.html">FileUtility</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GItRepoListHeaderView.html">GItRepoListHeaderView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitRepoDetailCoordinator.html">GitRepoDetailCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitRepoDetailViewController.html">GitRepoDetailViewController</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitRepoDetailViewModel.html">GitRepoDetailViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitRepoRemoteListProvider.html">GitRepoRemoteListProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitRepoTableViewCell.html">GitRepoTableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitSearchReposCoordinator.html">GitSearchReposCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitSearchReposViewModel.html">GitSearchReposViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitSearchServiceHandler.html">GitSearchServiceHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitSearchWorker.html">GitSearchWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitVersionServiceHandler.html">GitVersionServiceHandler</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/GitVersionWorker.html">GitVersionWorker</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/KeyValueDetailView.html">KeyValueDetailView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/NetworkManager.html">NetworkManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SceneDelegate.html">SceneDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/SessionHelper.html">SessionHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Classes/ViewController.html">ViewController</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Enums.html">Enumerations</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Enums/GitRepoSection.html">GitRepoSection</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/GitSearchTarget.html">GitSearchTarget</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/HttpMethod.html">HttpMethod</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Enums/ParamEncoding.html">ParamEncoding</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Extensions/Encodable.html">Encodable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIImage.html">UIImage</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UIStackView.html">UIStackView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions/UITableView.html">UITableView</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)UITableViewCell">UITableViewCell</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Extensions.html#/c:objc(cs)UITableViewHeaderFooterView">UITableViewHeaderFooterView</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Protocols/BaseCoordinator.html">BaseCoordinator</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/BaseNetworkRequest.html">BaseNetworkRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitRepoDetailProviderProtocol.html">GitRepoDetailProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitRepoDetailViewDelegate.html">GitRepoDetailViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitRepoListProviderProtocol.html">GitRepoListProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitRepoSearchProtocol.html">GitRepoSearchProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitRepoViewDelegate.html">GitRepoViewDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitRepoViewModelDelegate.html">GitRepoViewModelDelegate</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitSearchServiceProvider.html">GitSearchServiceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitSearchWorkerProtocol.html">GitSearchWorkerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitVersionServiceProvider.html">GitVersionServiceProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/GitVersionWorkerProtocol.html">GitVersionWorkerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/NetworkProvider.html">NetworkProvider</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Reusable.html">Reusable</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Protocols/Storyboarded.html">Storyboarded</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Structs.html">Structures</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Structs/GitLatestRepoVersionResponse.html">GitLatestRepoVersionResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitLatestRepoVersionResponse/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitLatestVersionParameterModel.html">GitLatestVersionParameterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitRepoCellViewModel.html">GitRepoCellViewModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitRepoDetailModel.html">GitRepoDetailModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitRepoDetailSummaryModel.html">GitRepoDetailSummaryModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitRepoDetailsListModel.html">GitRepoDetailsListModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitRepoListResponse.html">GitRepoListResponse</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitRepoListResponse/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitReposParameterModel.html">GitReposParameterModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/GitReposParameterModel/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Item.html">Item</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Item/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/KeyValueDetailModel.html">KeyValueDetailModel</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Owner.html">Owner</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/Owner/CodingKeys.html">– CodingKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Structs/SearchBarConstants.html">SearchBarConstants</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a href="../Typealiases.html">Type Aliases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11GitExplorer12FailureBlocka">FailureBlock</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11GitExplorer0A20RepoProviderProtocola">GitRepoProviderProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11GitExplorer14NetworkRequesta">NetworkRequest</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11GitExplorer6Paramsa">Params</a>
+              </li>
+              <li class="nav-group-task">
+                <a href="../Typealiases.html#/s:11GitExplorer12SuccessBlocka">SuccessBlock</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            <h1>GitRepoRemoteListProvider</h1>
+              <div class="declaration">
+                <div class="language">
+                  
+                  <pre class="highlight swift"><code><span class="kd">class</span> <span class="kt">GitRepoRemoteListProvider</span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GitRepoRemoteListProvider</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitRepoListProviderProtocol.html">GitRepoListProviderProtocol</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GitRepoRemoteListProvider</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitRepoSearchProtocol.html">GitRepoSearchProtocol</a></span></code></pre>
+<pre class="highlight swift"><code><span class="kd">extension</span> <span class="kt">GitRepoRemoteListProvider</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitRepoDetailProviderProtocol.html">GitRepoDetailProviderProtocol</a></span></code></pre>
+
+                </div>
+              </div>
+            <p>Provider for remote data list - Calls an API to fetch data on change of search text.</p>
+
+          </section>
+          <section class="section task-group-section">
+            <div class="task-group">
+              <ul>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC6workerAA0A20SearchWorkerProtocol_pvp"></a>
+                    <a name="//apple_ref/swift/Property/worker" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC6workerAA0A20SearchWorkerProtocol_pvp">worker</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">worker</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitSearchWorkerProtocol.html">GitSearchWorkerProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC10identifierAA0aC7SectionOvp"></a>
+                    <a name="//apple_ref/swift/Property/identifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC10identifierAA0aC7SectionOvp">identifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt"><a href="../Enums/GitRepoSection.html">GitRepoSection</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC8delegateAA0aC17ViewModelDelegate_pSgvp"></a>
+                    <a name="//apple_ref/swift/Property/delegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC8delegateAA0aC17ViewModelDelegate_pSgvp">delegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">weak</span> <span class="k">var</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitRepoViewModelDelegate.html">GitRepoViewModelDelegate</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC18repoSearchResponseAA0aceI0VSgvp"></a>
+                    <a name="//apple_ref/swift/Property/repoSearchResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC18repoSearchResponseAA0aceI0VSgvp">repoSearchResponse</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">repoSearchResponse</span><span class="p">:</span> <span class="kt"><a href="../Structs/GitRepoListResponse.html">GitRepoListResponse</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC14parameterModelAA0a14ReposParameterH0Vvp"></a>
+                    <a name="//apple_ref/swift/Property/parameterModel" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC14parameterModelAA0a14ReposParameterH0Vvp">parameterModel</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">parameterModel</span><span class="p">:</span> <span class="kt"><a href="../Structs/GitReposParameterModel.html">GitReposParameterModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC9isLoadingSbvp"></a>
+                    <a name="//apple_ref/swift/Property/isLoading" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC9isLoadingSbvp">isLoading</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="k">var</span> <span class="nv">isLoading</span><span class="p">:</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC6worker10identifier8delegateAcA0A20SearchWorkerProtocol_p_AA0aC7SectionOAA0aC17ViewModelDelegate_pSgtcfc"></a>
+                    <a name="//apple_ref/swift/Method/init(worker:identifier:delegate:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC6worker10identifier8delegateAcA0A20SearchWorkerProtocol_p_AA0aC7SectionOAA0aC17ViewModelDelegate_pSgtcfc">init(worker:<wbr>identifier:<wbr>delegate:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="nf">init</span><span class="p">(</span><span class="nv">worker</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitSearchWorkerProtocol.html">GitSearchWorkerProtocol</a></span><span class="p">,</span> <span class="nv">identifier</span><span class="p">:</span> <span class="kt"><a href="../Enums/GitRepoSection.html">GitRepoSection</a></span><span class="p">,</span> <span class="nv">delegate</span><span class="p">:</span> <span class="kt"><a href="../Protocols/GitRepoViewModelDelegate.html">GitRepoViewModelDelegate</a></span><span class="p">?)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC12numberOfRowsSiyF"></a>
+                    <a name="//apple_ref/swift/Method/numberOfRows()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC12numberOfRowsSiyF">numberOfRows()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">numberOfRows</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">Int</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC14titleForHeaderSSSgyF"></a>
+                    <a name="//apple_ref/swift/Method/titleForHeader()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC14titleForHeaderSSSgyF">titleForHeader()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Title for the section presenting the data is the number of items in the list.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">titleForHeader</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>Title string.
+Mapping from response:
+Number of items - totalCount</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC13cellViewModel6forRowypSgSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/cellViewModel(forRow:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC13cellViewModel6forRowypSgSi_tF">cellViewModel(forRow:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns <code><a href="../Structs/GitRepoCellViewModel.html">GitRepoCellViewModel</a></code> with mapped data from the response.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">cellViewModel</span><span class="p">(</span><span class="n">forRow</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Any</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Index of the item.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/GitRepoCellViewModel.html">GitRepoCellViewModel</a></code>
+Mapping from response:
+title - <owner.login/name>
+description - itemDescription
+iconUrl - owner.avatarURL</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC8getTitle33_2385E11407202311AB9CF434C26CCAA2LL4dataSSAA4ItemV_tF"></a>
+                    <a name="//apple_ref/swift/Method/getTitle(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC8getTitle33_2385E11407202311AB9CF434C26CCAA2LL4dataSSAA4ItemV_tF">getTitle(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Undocumented</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">getTitle</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Structs/Item.html">Item</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC15didUpdateSearchyySSF"></a>
+                    <a name="//apple_ref/swift/Method/didUpdateSearch(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC15didUpdateSearchyySSF">didUpdateSearch(_:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Action to handle change on search text.
+ Case 1: New text length &lt; 3, old text length &lt; 3
+ Action: No action required
+ Case 2: New text length &lt; 3, old text length == 3. Text being deleted.
+ Action: Clear search results and update the change to listening classes.
+ Case 3: New text length &gt;=  3
+ Action: Get repo list by calling the API with the new search term.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didUpdateSearch</span><span class="p">(</span><span class="n">_</span> <span class="nv">text</span><span class="p">:</span> <span class="kt">String</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>text</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>New search text</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC17didReachEndOfPageyyF"></a>
+                    <a name="//apple_ref/swift/Method/didReachEndOfPage()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC17didReachEndOfPageyyF">didReachEndOfPage()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If an api call is not already in progress and the end of page is reached, call the api with incremented page no.
+Check if all items in the list are already available.
+Total count is available in the response attribute <code>totalCount</code>.
+Do not call the api if all the items are already fetched.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">didReachEndOfPage</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC16fetchUpdatedData33_2385E11407202311AB9CF434C26CCAA2LL12isNewRequestySb_tF"></a>
+                    <a name="//apple_ref/swift/Method/fetchUpdatedData(isNewRequest:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC16fetchUpdatedData33_2385E11407202311AB9CF434C26CCAA2LL12isNewRequestySb_tF">fetchUpdatedData(isNewRequest:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Fetch repo list by calling the API. Reset response in case of change of searchText and append if it&rsquo;s paginatin.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">fetchUpdatedData</span><span class="p">(</span><span class="nv">isNewRequest</span><span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>isNewRequest</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code>true</code> in case of change in search text. <code>false</code> in case of pagination.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC9resetPage33_2385E11407202311AB9CF434C26CCAA2LLyyF"></a>
+                    <a name="//apple_ref/swift/Method/resetPage()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC9resetPage33_2385E11407202311AB9CF434C26CCAA2LLyyF">resetPage()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>If the api fails while fetching paginated results, reset page number to the one previous.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">resetPage</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC03getC6Detail3forAA0acH5ModelVSgSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/getRepoDetail(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC03getC6Detail3forAA0acH5ModelVSgSi_tF">getRepoDetail(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a repository detail model.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getRepoDetail</span><span class="p">(</span><span class="k">for</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/GitRepoDetailModel.html">GitRepoDetailModel</a></span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Index of the item required to be converted to <code>GitRepoDetailCellViewModel</code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code>GitRepoDetailCellViewModel</code> with the details mapped from Item data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC15getSummaryModel33_2385E11407202311AB9CF434C26CCAA2LL4dataAA0ac6DetailhI0VAA4ItemV_tF"></a>
+                    <a name="//apple_ref/swift/Method/getSummaryModel(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC15getSummaryModel33_2385E11407202311AB9CF434C26CCAA2LL4dataAA0ac6DetailhI0VAA4ItemV_tF">getSummaryModel(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a model with the basic details of a repository.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">getSummaryModel</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Structs/Item.html">Item</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/GitRepoDetailSummaryModel.html">GitRepoDetailSummaryModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Structs/Item.html">Item</a></code> model with data needed to construct <code><a href="../Structs/GitRepoDetailSummaryModel.html">GitRepoDetailSummaryModel</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/GitRepoDetailSummaryModel.html">GitRepoDetailSummaryModel</a></code> with the details mapped from item data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC010getDetailsE5Model33_2385E11407202311AB9CF434C26CCAA2LL4dataAA0acheI0VAA4ItemV_tF"></a>
+                    <a name="//apple_ref/swift/Method/getDetailsListModel(data:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC010getDetailsE5Model33_2385E11407202311AB9CF434C26CCAA2LL4dataAA0acheI0VAA4ItemV_tF">getDetailsListModel(data:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a list model with extra details of a repository.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">private</span> <span class="kd">func</span> <span class="nf">getDetailsListModel</span><span class="p">(</span><span class="nv">data</span><span class="p">:</span> <span class="kt"><a href="../Structs/Item.html">Item</a></span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/GitRepoDetailsListModel.html">GitRepoDetailsListModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p><code><a href="../Structs/Item.html">Item</a></code> model with data needed to construct <code><a href="../Structs/GitRepoDetailsListModel.html">GitRepoDetailsListModel</a></code>.</p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/GitRepoDetailsListModel.html">GitRepoDetailsListModel</a></code> with the details mapped from item data.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:11GitExplorer0A22RepoRemoteListProviderC03getC20DetailParameterModel3forAA0a13LatestVersioniJ0VSi_tF"></a>
+                    <a name="//apple_ref/swift/Method/getRepoDetailParameterModel(for:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:11GitExplorer0A22RepoRemoteListProviderC03getC20DetailParameterModel3forAA0a13LatestVersioniJ0VSi_tF">getRepoDetailParameterModel(for:<wbr>)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs the parameterModel needed to fetch the latestRepoVersion.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">getRepoDetailParameterModel</span><span class="p">(</span><span class="k">for</span> <span class="nv">index</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt"><a href="../Structs/GitLatestVersionParameterModel.html">GitLatestVersionParameterModel</a></span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>index</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Index of the item required to construct <code><a href="../Structs/GitLatestVersionParameterModel.html">GitLatestVersionParameterModel.</a></code></p>
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p><code><a href="../Structs/GitLatestVersionParameterModel.html">GitLatestVersionParameterModel</a></code> with the required parameters.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2021 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2021-03-04)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.13.6</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
