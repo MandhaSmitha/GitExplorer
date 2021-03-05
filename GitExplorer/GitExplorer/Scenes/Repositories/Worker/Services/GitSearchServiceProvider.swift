@@ -9,7 +9,7 @@ import Foundation
 
 /// Service provider protocol for Git repo search APIs.
 protocol GitSearchServiceProvider {
-    func getRepositories(parameterModel: GitReposParameterModel,
+    func getRepositories(parameterModel: GitRepoParameterModel,
                          isNewRequest: Bool,
                          successHandler: @escaping (Int?, GitRepoListResponse?) -> Void,
                          failureHandler: @escaping (Int?, String?) -> Void)

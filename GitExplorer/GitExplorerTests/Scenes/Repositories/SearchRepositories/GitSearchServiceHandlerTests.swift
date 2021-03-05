@@ -21,7 +21,7 @@ class GitSearchServiceHandlerTests: XCTestCase {
 
     func testGetRepositoriesResponse() throws {
         var response: GitRepoListResponse?
-        let parameterModel = GitReposParameterModel(searchQuery: "str", page: 1)
+        let parameterModel = GitRepoParameterModel(searchQuery: "str", page: 1)
         serviceHandler.getRepositories(parameterModel: parameterModel,
                                        isNewRequest: true,
                                        successHandler: { (status, data) in

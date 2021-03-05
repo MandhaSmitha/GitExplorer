@@ -14,7 +14,7 @@
 		5B86AE8625ED167700DCC5F5 /* GitRepoViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AE8525ED167700DCC5F5 /* GitRepoViewModelDelegate.swift */; };
 		5B86AEBE25ED485400DCC5F5 /* GitRepoRemoteListProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AEBD25ED485400DCC5F5 /* GitRepoRemoteListProvider.swift */; };
 		5B86AF0F25ED8BE600DCC5F5 /* GitRepoRemoteListProviderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF0E25ED8BE600DCC5F5 /* GitRepoRemoteListProviderTests.swift */; };
-		5B86AF2725EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF2625EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift */; };
+		5B86AF2725EE1B3D00DCC5F5 /* GitRepoCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF2625EE1B3D00DCC5F5 /* GitRepoCoordinator.swift */; };
 		5B86AF3D25EE1B7B00DCC5F5 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF3925EE1B7B00DCC5F5 /* UITableView+Extension.swift */; };
 		5B86AF3E25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF3A25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift */; };
 		5B86AF3F25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B86AF3B25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift */; };
@@ -60,7 +60,7 @@
 		5BF155F225EC2CB8008EC837 /* GitSearchWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF155F125EC2CB8008EC837 /* GitSearchWorker.swift */; };
 		5BF155FD25EC2CCE008EC837 /* GitSearchServiceHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF155FC25EC2CCE008EC837 /* GitSearchServiceHandler.swift */; };
 		5BF1560225EC2D04008EC837 /* GitSearchTarget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1560125EC2D04008EC837 /* GitSearchTarget.swift */; };
-		5BF1560B25EC2D78008EC837 /* GitReposParameterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1560A25EC2D78008EC837 /* GitReposParameterModel.swift */; };
+		5BF1560B25EC2D78008EC837 /* GitRepoParameterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1560A25EC2D78008EC837 /* GitRepoParameterModel.swift */; };
 		5BF1561425EC2E57008EC837 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1561325EC2E57008EC837 /* Encodable+Extension.swift */; };
 		5BF1561A25EC2F08008EC837 /* GitRepoListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1561925EC2F08008EC837 /* GitRepoListResponse.swift */; };
 		5BF1562B25EC3D18008EC837 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1562A25EC3D18008EC837 /* MockNetworkManager.swift */; };
@@ -68,7 +68,7 @@
 		5BF1563E25EC4BDB008EC837 /* GitSearchServiceHandlerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1563D25EC4BDB008EC837 /* GitSearchServiceHandlerTests.swift */; };
 		5BF1564725EC4CAE008EC837 /* SearchReposResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BF1564625EC4CAE008EC837 /* SearchReposResponse.json */; };
 		5BF1565925EC503D008EC837 /* GitExplorerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1556125EA8DE8008EC837 /* GitExplorerUITests.swift */; };
-		5BF1566C25EC57C6008EC837 /* GitSearchReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1566B25EC57C6008EC837 /* GitSearchReposViewModel.swift */; };
+		5BF1566C25EC57C6008EC837 /* GitRepoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BF1566B25EC57C6008EC837 /* GitRepoViewModel.swift */; };
 		CFF97591B0272665A6D9EA52 /* Pods_GitExplorerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9FB91F517DBECEEECA7AD5C /* Pods_GitExplorerTests.framework */; };
 		FFFA20CFA97EA84811AF90E7 /* Pods_GitExplorer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1A3AA07BA06A80055D22B96 /* Pods_GitExplorer.framework */; };
 /* End PBXBuildFile section */
@@ -99,7 +99,7 @@
 		5B86AE8525ED167700DCC5F5 /* GitRepoViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoViewModelDelegate.swift; sourceTree = "<group>"; };
 		5B86AEBD25ED485400DCC5F5 /* GitRepoRemoteListProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoRemoteListProvider.swift; sourceTree = "<group>"; };
 		5B86AF0E25ED8BE600DCC5F5 /* GitRepoRemoteListProviderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoRemoteListProviderTests.swift; sourceTree = "<group>"; };
-		5B86AF2625EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitSearchReposCoordinator.swift; sourceTree = "<group>"; };
+		5B86AF2625EE1B3D00DCC5F5 /* GitRepoCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GitRepoCoordinator.swift; sourceTree = "<group>"; };
 		5B86AF3925EE1B7B00DCC5F5 /* UITableView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		5B86AF3A25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 		5B86AF3B25EE1B7B00DCC5F5 /* UITableViewHeaderFooterView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewHeaderFooterView+Extension.swift"; sourceTree = "<group>"; };
@@ -153,14 +153,14 @@
 		5BF155F125EC2CB8008EC837 /* GitSearchWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitSearchWorker.swift; sourceTree = "<group>"; };
 		5BF155FC25EC2CCE008EC837 /* GitSearchServiceHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitSearchServiceHandler.swift; sourceTree = "<group>"; };
 		5BF1560125EC2D04008EC837 /* GitSearchTarget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitSearchTarget.swift; sourceTree = "<group>"; };
-		5BF1560A25EC2D78008EC837 /* GitReposParameterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitReposParameterModel.swift; sourceTree = "<group>"; };
+		5BF1560A25EC2D78008EC837 /* GitRepoParameterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoParameterModel.swift; sourceTree = "<group>"; };
 		5BF1561325EC2E57008EC837 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		5BF1561925EC2F08008EC837 /* GitRepoListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoListResponse.swift; sourceTree = "<group>"; };
 		5BF1562A25EC3D18008EC837 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
 		5BF1563225EC3FC0008EC837 /* FileUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtility.swift; sourceTree = "<group>"; };
 		5BF1563D25EC4BDB008EC837 /* GitSearchServiceHandlerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitSearchServiceHandlerTests.swift; sourceTree = "<group>"; };
 		5BF1564625EC4CAE008EC837 /* SearchReposResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SearchReposResponse.json; sourceTree = "<group>"; };
-		5BF1566B25EC57C6008EC837 /* GitSearchReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitSearchReposViewModel.swift; sourceTree = "<group>"; };
+		5BF1566B25EC57C6008EC837 /* GitRepoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitRepoViewModel.swift; sourceTree = "<group>"; };
 		5D90383D8F5A31EACED47B18 /* Pods-GitExplorerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorerTests.release.xcconfig"; path = "Target Support Files/Pods-GitExplorerTests/Pods-GitExplorerTests.release.xcconfig"; sourceTree = "<group>"; };
 		6DB88C12C110C302707E2716 /* Pods-GitExplorer-GitExplorerUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorer-GitExplorerUITests.release.xcconfig"; path = "Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests.release.xcconfig"; sourceTree = "<group>"; };
 		786A680A89E8B400676896B1 /* Pods-GitExplorer-GitExplorerUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitExplorer-GitExplorerUITests.debug.xcconfig"; path = "Target Support Files/Pods-GitExplorer-GitExplorerUITests/Pods-GitExplorer-GitExplorerUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -201,7 +201,7 @@
 		5B86AF2525EE1B3D00DCC5F5 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
-				5B86AF2625EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift */,
+				5B86AF2625EE1B3D00DCC5F5 /* GitRepoCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -440,7 +440,7 @@
 		5BF155E725EC2AF9008EC837 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				5BF1566B25EC57C6008EC837 /* GitSearchReposViewModel.swift */,
+				5BF1566B25EC57C6008EC837 /* GitRepoViewModel.swift */,
 				5B86AE7825ECFCE300DCC5F5 /* GitRepoProviderProtocol.swift */,
 				5B86AE8525ED167700DCC5F5 /* GitRepoViewModelDelegate.swift */,
 				5B86AEBD25ED485400DCC5F5 /* GitRepoRemoteListProvider.swift */,
@@ -479,7 +479,7 @@
 			isa = PBXGroup;
 			children = (
 				5B86AE7D25ED079500DCC5F5 /* GitRepoCellViewModel.swift */,
-				5BF1560A25EC2D78008EC837 /* GitReposParameterModel.swift */,
+				5BF1560A25EC2D78008EC837 /* GitRepoParameterModel.swift */,
 				5BF1561925EC2F08008EC837 /* GitRepoListResponse.swift */,
 			);
 			path = Model;
@@ -829,13 +829,13 @@
 				5B86AF8025EE593F00DCC5F5 /* GitRepoDetailCoordinator.swift in Sources */,
 				5B86B03325F128BB00DCC5F5 /* GitSearchServiceProvider.swift in Sources */,
 				5B86AF3E25EE1B7B00DCC5F5 /* UITableViewCell+Extension.swift in Sources */,
-				5B86AF2725EE1B3D00DCC5F5 /* GitSearchReposCoordinator.swift in Sources */,
+				5B86AF2725EE1B3D00DCC5F5 /* GitRepoCoordinator.swift in Sources */,
 				5B86B02E25F1284300DCC5F5 /* GitVersionWorker.swift in Sources */,
 				5B86AF8E25EE5DAB00DCC5F5 /* GitRepoDetailViewModel.swift in Sources */,
 				5B86AF4025EE1B7B00DCC5F5 /* Storyboard+Utility.swift in Sources */,
 				5B86B01525F0124300DCC5F5 /* UIImage+Extension.swift in Sources */,
 				5BF155BA25EB610C008EC837 /* SessionHelper.swift in Sources */,
-				5BF1566C25EC57C6008EC837 /* GitSearchReposViewModel.swift in Sources */,
+				5BF1566C25EC57C6008EC837 /* GitRepoViewModel.swift in Sources */,
 				5B86AFA525EE609000DCC5F5 /* GitRepoDetailModel.swift in Sources */,
 				5BF155AB25EACF83008EC837 /* HttpMethod.swift in Sources */,
 				5B86AF3D25EE1B7B00DCC5F5 /* UITableView+Extension.swift in Sources */,
@@ -848,7 +848,7 @@
 				5B86AF4625EE1B8700DCC5F5 /* BaseCoordinator.swift in Sources */,
 				5BF1561425EC2E57008EC837 /* Encodable+Extension.swift in Sources */,
 				5BF1561A25EC2F08008EC837 /* GitRepoListResponse.swift in Sources */,
-				5BF1560B25EC2D78008EC837 /* GitReposParameterModel.swift in Sources */,
+				5BF1560B25EC2D78008EC837 /* GitRepoParameterModel.swift in Sources */,
 				5BF155B025EB44A4008EC837 /* NetworkRequest.swift in Sources */,
 				5BF1554225EA8DE3008EC837 /* SceneDelegate.swift in Sources */,
 				5B86AFFB25EED7CE00DCC5F5 /* GitRepoDetailViewDelegate.swift in Sources */,

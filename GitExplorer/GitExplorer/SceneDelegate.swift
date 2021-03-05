@@ -22,7 +22,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         navigationController.navigationBar.shadowImage = UIImage()
         navigationController.navigationBar.isTranslucent = true
         window?.rootViewController = navigationController
-        let initialCoordinator = GitSearchReposCoordinator(navigationController: navigationController)
+        let initialCoordinator = GitRepoCoordinator(navigationController: navigationController)
         initialCoordinator.start()
     }
 

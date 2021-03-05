@@ -25,7 +25,7 @@ extension GitSearchWorker: GitSearchWorkerProtocol {
     ///   - successHandler: Completion handler for in case of a success response.
     ///   					Returns status and GitRepoListResponse?.
     ///   - failureHandler: Completion handler in case of a failure response. Returns status and the error string.
-    func getRepositories(parameterModel: GitReposParameterModel, isNewRequest: Bool,
+    func getRepositories(parameterModel: GitRepoParameterModel, isNewRequest: Bool,
                          successHandler: @escaping (Int?, GitRepoListResponse?) -> Void,
                          failureHandler: @escaping (Int?, String?) -> Void) {
         serviceProvider.getRepositories(parameterModel: parameterModel,
